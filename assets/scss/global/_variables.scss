@@ -1,0 +1,87 @@
+//primary colors
+$primary			: #f6931d;
+$secondary			: #221f20;
+$text				: #58595B;
+$text-content		: #878787;
+$text-light			: #D5D5D5;
+$footer-links		: #B0B0B0;
+
+$sidebar			: #F3F5F3;
+$pagination-border	: #E9E9E9;
+$pagination-text	: #9E9E9E;
+
+$blog-nav			: #818181;
+$blog-nav-pn		: #FFA94D;
+$blog-utilities		: #E8E8E8;
+
+$today-utilities	: #E8E8E8;
+
+$utilities-text		: #969696;
+
+$input-border		: #D8D8D8;
+$menu-line			: #585858;
+
+$precinct-promo		: #b71534;
+$precinct-partners	: #1C1C1C;
+
+$precinct-title-h	: 37px;
+$precinct-content-h	: 173px;
+
+$form-bg			: #F5F5F5;
+$form-label			: #939393;
+$form-text			: #909090;
+
+$spec-title-bar		: #6C6C6C;
+$spec-content		: #EEEEEE;
+
+$event-border		: #F2F2F2;
+$event-text			: #9B9B9B;
+
+$modal-text			: #818181;
+
+$copyright			: #9B9B9B;
+
+$membership-1		: #30c1a0;
+$membership-1-light	: #e6f7f3;
+$membership-2		: $primary;
+$membership-2-light	: #fef2e4;
+$membership-3		: #4a90e2;
+$membership-3-light	: #e9f1fb;
+$membership-4		: #B71534;
+$membership-4-light	: #F6E3E6;
+
+$facilities-carousel: #D7D7D7;
+
+$white				: #fff;
+$black				: #000;
+$grey				: #878787;
+
+
+//fontsbbv
+$primary-font		: 'Roboto', sans-serif;
+$secondary-font		: 'Poppins', sans-serif;
+$banner-font		: 'Depressionist', sans-serif;
+
+
+// breakpoints
+$XXS				: 320px;
+$XS					: 480px;
+$S					: 640px;
+$M					: 768px;
+$L					: 1024px;
+$XL					: 1200px;
+$XXL				: 1440px;
+
+$grid-gutter-width  : 25px;
+
+// Small screen / tablet
+$container-tablet:             95% !default;
+$container-desktop:            (940px + $grid-gutter-width) !default;
+$container-large-desktop:      (1200px + $grid-gutter-width) !default;
+
+//== Media queries breakpoints
+
+$screen-xs:                  320px !default;
+$screen-sm:                  480px !default;
+$screen-md:                  992px !default;
+$screen-lg:                  1260px !default;

@@ -1,0 +1,195 @@
+/*
+SCSS variables are information about icon's compiled state, stored under its original file name
+
+.icon-home {
+  width: $icon-home-width;
+}
+
+The large array-like variables contain all information about a single icon
+$icon-home: x y offset_x offset_y width height total_width total_height image_path;
+
+At the bottom of this section, we provide information about the spritesheet itself
+$spritesheet: width height image $spritesheet-sprites;
+*/
+$blog-tick-name: 'blog-tick';
+$blog-tick-x: 152px;
+$blog-tick-y: 138px;
+$blog-tick-offset-x: -152px;
+$blog-tick-offset-y: -138px;
+$blog-tick-width: 42px;
+$blog-tick-height: 43px;
+$blog-tick-total-width: 381px;
+$blog-tick-total-height: 189px;
+$blog-tick-image: '../img/sprite.png';
+$blog-tick: (152px, 138px, -152px, -138px, 42px, 43px, 381px, 189px, '../img/sprite.png', 'blog-tick', );
+$bubble-name: 'bubble';
+$bubble-x: 0px;
+$bubble-y: 0px;
+$bubble-offset-x: 0px;
+$bubble-offset-y: 0px;
+$bubble-width: 381px;
+$bubble-height: 138px;
+$bubble-total-width: 381px;
+$bubble-total-height: 189px;
+$bubble-image: '../img/sprite.png';
+$bubble: (0px, 0px, 0px, 0px, 381px, 138px, 381px, 189px, '../img/sprite.png', 'bubble', );
+$choose-icon-name: 'choose-icon';
+$choose-icon-x: 194px;
+$choose-icon-y: 138px;
+$choose-icon-offset-x: -194px;
+$choose-icon-offset-y: -138px;
+$choose-icon-width: 28px;
+$choose-icon-height: 29px;
+$choose-icon-total-width: 381px;
+$choose-icon-total-height: 189px;
+$choose-icon-image: '../img/sprite.png';
+$choose-icon: (194px, 138px, -194px, -138px, 28px, 29px, 381px, 189px, '../img/sprite.png', 'choose-icon', );
+$fb-share-name: 'fb-share';
+$fb-share-x: 250px;
+$fb-share-y: 138px;
+$fb-share-offset-x: -250px;
+$fb-share-offset-y: -138px;
+$fb-share-width: 21px;
+$fb-share-height: 21px;
+$fb-share-total-width: 381px;
+$fb-share-total-height: 189px;
+$fb-share-image: '../img/sprite.png';
+$fb-share: (250px, 138px, -250px, -138px, 21px, 21px, 381px, 189px, '../img/sprite.png', 'fb-share', );
+$in-share-name: 'in-share';
+$in-share-x: 271px;
+$in-share-y: 138px;
+$in-share-offset-x: -271px;
+$in-share-offset-y: -138px;
+$in-share-width: 21px;
+$in-share-height: 21px;
+$in-share-total-width: 381px;
+$in-share-total-height: 189px;
+$in-share-image: '../img/sprite.png';
+$in-share: (271px, 138px, -271px, -138px, 21px, 21px, 381px, 189px, '../img/sprite.png', 'in-share', );
+$satisfied-client-name: 'satisfied-client';
+$satisfied-client-x: 0px;
+$satisfied-client-y: 138px;
+$satisfied-client-offset-x: 0px;
+$satisfied-client-offset-y: -138px;
+$satisfied-client-width: 56px;
+$satisfied-client-height: 51px;
+$satisfied-client-total-width: 381px;
+$satisfied-client-total-height: 189px;
+$satisfied-client-image: '../img/sprite.png';
+$satisfied-client: (0px, 138px, 0px, -138px, 56px, 51px, 381px, 189px, '../img/sprite.png', 'satisfied-client', );
+$service-icon-alt-name: 'service-icon-alt';
+$service-icon-alt-x: 56px;
+$service-icon-alt-y: 138px;
+$service-icon-alt-offset-x: -56px;
+$service-icon-alt-offset-y: -138px;
+$service-icon-alt-width: 48px;
+$service-icon-alt-height: 50px;
+$service-icon-alt-total-width: 381px;
+$service-icon-alt-total-height: 189px;
+$service-icon-alt-image: '../img/sprite.png';
+$service-icon-alt: (56px, 138px, -56px, -138px, 48px, 50px, 381px, 189px, '../img/sprite.png', 'service-icon-alt', );
+$service-icon-name: 'service-icon';
+$service-icon-x: 104px;
+$service-icon-y: 138px;
+$service-icon-offset-x: -104px;
+$service-icon-offset-y: -138px;
+$service-icon-width: 48px;
+$service-icon-height: 50px;
+$service-icon-total-width: 381px;
+$service-icon-total-height: 189px;
+$service-icon-image: '../img/sprite.png';
+$service-icon: (104px, 138px, -104px, -138px, 48px, 50px, 381px, 189px, '../img/sprite.png', 'service-icon', );
+$supply-list-name: 'supply-list';
+$supply-list-x: 222px;
+$supply-list-y: 138px;
+$supply-list-offset-x: -222px;
+$supply-list-offset-y: -138px;
+$supply-list-width: 28px;
+$supply-list-height: 29px;
+$supply-list-total-width: 381px;
+$supply-list-total-height: 189px;
+$supply-list-image: '../img/sprite.png';
+$supply-list: (222px, 138px, -222px, -138px, 28px, 29px, 381px, 189px, '../img/sprite.png', 'supply-list', );
+$tw-share-name: 'tw-share';
+$tw-share-x: 292px;
+$tw-share-y: 138px;
+$tw-share-offset-x: -292px;
+$tw-share-offset-y: -138px;
+$tw-share-width: 21px;
+$tw-share-height: 21px;
+$tw-share-total-width: 381px;
+$tw-share-total-height: 189px;
+$tw-share-image: '../img/sprite.png';
+$tw-share: (292px, 138px, -292px, -138px, 21px, 21px, 381px, 189px, '../img/sprite.png', 'tw-share', );
+$spritesheet-width: 381px;
+$spritesheet-height: 189px;
+$spritesheet-image: '../img/sprite.png';
+$spritesheet-sprites: ($blog-tick, $bubble, $choose-icon, $fb-share, $in-share, $satisfied-client, $service-icon-alt, $service-icon, $supply-list, $tw-share, );
+$spritesheet: (381px, 189px, '../img/sprite.png', $spritesheet-sprites, );
+
+/*
+The provided mixins are intended to be used with the array-like variables
+
+.icon-home {
+  @include sprite-width($icon-home);
+}
+
+.icon-email {
+  @include sprite($icon-email);
+}
+
+Example usage in HTML:
+
+`display: block` sprite:
+<div class="icon-home"></div>
+
+To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+
+// CSS
+.icon {
+  display: inline-block;
+}
+
+// HTML
+<i class="icon icon-home"></i>
+*/
+@mixin sprite-width($sprite) {
+  width: nth($sprite, 5);
+}
+
+@mixin sprite-height($sprite) {
+  height: nth($sprite, 6);
+}
+
+@mixin sprite-position($sprite) {
+  $sprite-offset-x: nth($sprite, 3);
+  $sprite-offset-y: nth($sprite, 4);
+  background-position: $sprite-offset-x  $sprite-offset-y;
+}
+
+@mixin sprite-image($sprite) {
+  $sprite-image: nth($sprite, 9);
+  background-image: url(#{$sprite-image});
+}
+
+@mixin sprite($sprite) {
+  @include sprite-image($sprite);
+  @include sprite-position($sprite);
+  @include sprite-width($sprite);
+  @include sprite-height($sprite);
+}
+
+/*
+The `sprites` mixin generates identical output to the CSS template
+  but can be overridden inside of SCSS
+
+@include sprites($spritesheet-sprites);
+*/
+@mixin sprites($sprites) {
+  @each $sprite in $sprites {
+    $sprite-name: nth($sprite, 10);
+    .#{$sprite-name} {
+      @include sprite($sprite);
+    }
+  }
+}

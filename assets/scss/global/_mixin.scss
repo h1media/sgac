@@ -1,0 +1,17 @@
+@function rem($size) {
+	$remSize: $size / 16px;
+	@return $remSize * 1rem;
+}
+
+@mixin media($point, $type:'max') {
+	@if( $type == 'max' ) {
+		@media (max-width: $point) {
+			@content;
+		}
+	} 
+	@if( $type == 'min' ) {
+		@media (min-width: $point+1) {
+			@content;
+		}
+	}
+}

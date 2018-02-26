@@ -1,0 +1,657 @@
+.home .page-content {
+	padding: 0;
+}
+.home-banner {
+	position: absolute;
+	top: 60%;
+	left: 50%;
+	text-align: center;
+	z-index: 999;
+	transform: translate(-50%, -60%);
+
+	h1 {
+		max-width: rem(850px); 
+
+		@include media($L) {
+			max-width: 100%;
+			font-size: rem(36px);
+			line-height: rem(42px);
+		}
+
+		@include media($M) {
+			font-size: rem(27px);
+			line-height: rem(34px);
+		}
+	}
+
+	.button {
+		margin-top: rem(50px);
+		color: $white;
+		border-color: $white;
+
+		&:hover {
+			border-color: $primary;
+			background: $primary;
+		}
+
+		@include media($M) {
+			margin-top: rem(16px);
+			color: $primary;
+			padding: rem(14px) rem(31px);
+		}
+	}
+
+	@include media($XS) {
+		width: 90%;
+	}
+}
+
+.intro-home {
+	@extend .intro-section;
+	padding-top: rem(145px);
+	padding-bottom: rem(65px);
+	//padding: rem(42px) 0;
+	background-image: url('../img/bgs/bg-hey-you.jpg');
+	background-size: 50%;
+	background-repeat: repeat-y;
+
+	@include media($L) {
+		padding-top: rem(135px);
+		padding-bottom: rem(35px);
+		background-repeat: repeat-y;
+	}
+
+	@include media($XS) {
+		background-repeat: repeat-x;
+		background-size: 150%;
+
+		.container {
+			padding-left: rem(24px);
+			padding-right: rem(24px);
+		}
+	}
+}
+
+
+.left-intro {
+	margin-top: rem(28px);
+	text-align: right;
+	color: $white;
+	padding-right: rem(64px);
+
+	@include media($L) {
+		padding-right: rem(16px);
+	}
+
+	@include media($XS) {
+		text-align: center;
+		padding-right: 0;
+		margin-top: 0;
+		background-image: url('../img/bgs/bg-hey-you.jpg');
+		margin-left: rem(-25px);
+		margin-right: rem(-23px);
+		padding-bottom: rem(24px);
+	}
+
+	p, h2, {
+		color: $white;
+	}
+
+	h2 {
+		font-size: rem(44px);
+		font-weight: 700;
+		text-transform: uppercase;
+		margin-bottom: 0;
+
+		@include media($XS) {
+			font-size: rem(34px);
+			margin-top: 0;
+		}
+	}
+
+	p {
+		font-size: rem(24px);
+		font-weight: 300;
+		margin: rem(40px) 0;
+
+		@include media($L) {
+			font-size: rem(18px);
+			margin: rem(20px) 0;
+			line-height: rem(28px);
+		}
+
+		@include media($XS) {
+			max-width: 80%;
+			margin-left: auto;
+			margin-right: auto;
+		}
+	}
+
+	.button {
+		color: $white;
+		border-color: $white;
+
+		&:hover {
+			color: $primary;
+			background: $white;
+			border-color: $white;
+		}
+
+		@include media($L) {
+			font-size: rem(14px);
+			margin-top: rem(51px);
+			padding: rem(12px) rem(18px);
+		}
+
+		@include media($M) {
+			margin-top: rem(38px);
+		}
+
+		@include media($XS) {
+			margin-top: rem(8px);
+		}
+	}
+}
+
+.right-intro {
+	text-align: left;
+	padding-left: rem(64px);
+
+	@include media($L) {
+		padding-left: rem(16px);
+	}
+
+	@include media($XS) {
+		text-align: center;
+		padding-left: 0;
+		margin-top: 0;
+		padding-top: rem(24px);
+	}
+
+	h2 {
+		font-size: rem(34px);
+		font-weight: 500;
+		line-height: rem(41px);
+
+		@include media($L) {
+			font-size: rem(26px);
+			line-height: rem(29px);
+		}
+
+		@include media($M) {
+			font-size: rem(20px);
+		}
+	}
+
+	p {
+		color: $text-content;
+		font-size: rem(16px);
+		font-weight: 300;
+		line-height: rem(27px);
+
+		@include media($M) {
+			font-size: rem(14px);
+			line-height: rem(24px);
+		}
+	}
+
+	.right-buttons {
+		margin-top: rem(32px);
+	}
+
+	.button {
+		font-size: rem(18px);
+		padding: rem(11px) 0;
+		text-align: center;
+		width: rem(148px);
+		margin-right: rem(22px);
+
+		@include media($L) {
+			width: rem(100px);
+			margin-right: rem(10px);
+			font-size: rem(14px);
+		}
+
+		@include media($M) {
+			width: rem(90px);
+			
+		}
+
+		@include media($S) {
+			margin-bottom: rem(16px);
+			width: 100%;
+		}
+	}
+	
+}
+
+
+.offer-box {
+	@extend %transition;
+	background: rgba($black ,0.4);
+	border: 2px solid $white;
+	height: rem(200px);
+	margin-bottom: rem(20px);
+	position: relative;
+
+	&:hover {
+		background: $black;
+		border-color: $primary;
+	}
+
+	@include media($L) {
+		height: rem(150px);
+	}
+
+	@include media($M) {
+		height: rem(102px);
+	}
+}
+
+.offer-box__title {
+	@extend %box-title;
+	color: $white;
+	font-family: $secondary-font;
+	font-size: rem(28px);
+	font-weight: 700;
+	line-height: rem(34px);
+	padding: 0 rem(24px);
+
+	span {
+		color: $primary;
+	}
+
+	@include media($L) {
+		font-size: rem(24px);
+	}
+
+	@include media($M) {
+		font-size: rem(18px);
+		line-height: rem(20px);
+	}
+}
+
+.offer-box__link {
+	@extend %box-link;
+}
+
+.promo-row {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	height: rem(440px);
+
+	@include media($L) {
+		height: auto;
+		display: block;
+	}
+
+	.offer-col {
+		width: 25%;
+		flex: 1 1 auto;
+		padding: 0 rem(12.5px);
+
+		@include media($L) {
+			width: 33.33333%;
+			float: left;
+		}
+
+		@include media($M) {
+			width: 50%;
+		}
+
+		@include media($M) {
+			width: 100%;
+			float: none;
+		}
+	}
+
+	.offer-col--featured {
+		flex: 2 0 rem(338px + 25px);
+		width: rem(338px + 25px);
+
+		@include media($L) {
+			width: 100%;
+		}
+	}
+}
+
+.offer--featured {
+	width: rem(338px);
+	height: rem(420px);
+	border: none;
+	background-color: $white;
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background: url('../img/bgs/featured-offer.jpg');
+	padding: rem(20px);
+
+	@include media($L) {
+		width: 100%;
+		height: auto;
+		background: transparent;
+		text-align: center;
+	}
+
+	@include media($M) {
+		padding: 0;
+	}
+
+	.featured-inner {
+		height: 100%;
+		@extend %transition;
+		padding: rem(40px);
+		background: $secondary;
+		border: 3px solid transparent;
+
+		@include media($L) {
+			background: transparent;
+			padding: 0;
+		}
+	}
+
+	.offer-box__title,
+	.offer-box__content {
+		position: static;
+		transform: none;
+		text-align: left;
+		padding: 0;
+	}
+
+	.offer-box__title {
+		color: $primary;
+		font-size: rem(44px);
+		line-height: rem(45px);
+
+		@include media($L) {
+			text-align: center;
+			font-size: rem(36px);
+			line-height: rem(38px);
+			br {
+				display: none;
+			}
+		}
+
+		@include media($M) {
+			font-size: rem(29px);
+			line-height: rem(35px);
+		}
+	}
+
+	.offer-box__content {
+		margin-top: rem(12px);
+		font-size: rem(33px);
+		line-height: rem(39px);
+		font-weight: 300;
+		color: $white;
+
+		span {
+			color: $primary;
+		}
+
+		@include media($L) {
+			text-align: center;
+			font-size: rem(28px);
+			line-height: rem(31px);
+			br {
+				display: none;
+			}
+		}
+
+		@include media($M) {
+			font-size: rem(22px);
+			line-height: rem(24px);
+		}
+	}
+
+	&:hover {
+		border: none;
+		background: url('../img/bgs/featured-offer.jpg');
+	}
+}
+
+.home-promo-boxes {
+	padding: rem(52px) 0;
+	background-color: $secondary;
+	background-image: url('../img/bgs/bg-offers.jpg');
+	background-size: cover;
+
+	@include media($M) {
+		padding-bottom: rem(16px);
+	}
+}
+
+
+.home-about-section {
+	background-size: cover;
+	background-repeat: no-repeat;
+	padding: rem(70px) 0;
+	text-align: center;
+
+	@include media($M) {
+		padding: rem(30px) 0;
+	}
+
+	p {
+		color: $text-light;
+	}
+
+	h2 {
+		font-size: rem(34px);
+
+		@include media($M) {
+			font-size: rem(20px);
+			margin-bottom: 0;
+		}
+	}
+
+	.about-half {
+		text-align: left;
+		display: flex;
+
+		@include media($L) {
+			display: block;
+			text-align: center;
+		}
+
+		@include media($XS) {
+			margin-bottom: rem(36px);
+		}
+	}
+
+	.about-intro {
+		max-width: rem(980px);
+		margin: rem(24px) auto rem(48px);
+
+		@include media($L) {
+			margin-bottom: rem(32px);
+		}
+
+		@include media($M) {
+			margin-top: rem(16px);
+		}
+	}
+
+	.about-half__image {
+		padding-right: rem(38px);
+
+		@include media($L) {
+			height: rem(158px);
+			padding-bottom: rem(24px);
+			padding-right: 0;
+		}
+
+		.swim {
+			width: rem(168px);
+		}
+	}
+
+	.about-half__text {
+		padding-right: rem(36px);
+
+		@include media($L) {
+			padding: 0 rem(16px);
+		}
+	}
+
+}
+
+.home-invitation-section {
+	padding: rem(36px) 0;
+	background: url( '../img/bgs/bg-join-small.jpg' );
+	background-size: cover;
+
+	.invitation-row {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+		@include media($M) {
+			padding-left: rem(24px);
+			padding-right: rem(24px);
+		}
+
+		@include media($XS) {
+			display: block;
+			text-align: center;
+		}
+	}
+}
+
+.invitation__logo {
+	
+	img {
+		max-width: rem(222px);
+
+		@include media($L) {
+			max-width: rem(182px);
+		}
+
+		@include media(800px) {
+			max-width: rem(146px);
+		}
+
+		@include media($M) {
+			max-width: rem(118px);
+		}
+
+		@include media($XS) {
+			max-width: 80%;
+		}
+	
+	}
+}
+
+.inivitation__text {
+
+	p {
+		color: $primary;
+		font-size: rem(26px);
+
+		@include media($L) {
+			font-size: rem(20px);
+			margin-bottom: 0;
+		}
+
+		@include media($M) {
+			font-size: rem(16px);
+		}
+
+		@include media($XS) {
+			margin: rem(16px) 0;
+		}
+	}
+
+	h2 {
+		font-size: rem(35px);
+		color: $white;
+		line-height: rem(42px);
+
+		@include media($L) {
+			font-size: rem(26px);
+		}
+
+		@include media(800px) {
+			font-size: rem(18px);
+			line-height: rem(24px);
+		}
+	}
+}
+
+.invitation__cta {
+
+	.button--join {
+		font-size: rem(18px);
+		padding: rem(16px) rem(31px);
+
+		@include media(800px) {
+			font-size: rem(16px);
+			padding: rem(11px) rem(15px);
+
+		}
+
+		@include media($XS) {
+			margin-top: rem(24px);
+			color: $primary;
+		}
+	}
+}
+
+.home-blog-section {
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	padding: rem(70px) 0;
+
+	
+	@include media($M) {
+		.col-sm-6:nth-child(3) {
+			display: none;
+		}	
+	}
+
+	@include media($XS) {
+		.col-sm-6:nth-child(2) {
+			display: none;
+		}	
+	}
+	
+
+	@include media($M) {
+		.container {
+			padding-left: rem(24px);
+			padding-right: rem(24px);
+		}
+		
+	}
+
+	@include media($XS) {
+		padding: rem(32px) 0;
+	}
+}
+
+.home-instagram-section {
+	text-align: center;
+	padding: rem(60px) 0;
+	background: url( '../img/bgs/bg-insta-feed-section.jpg' );
+	background-repeat: no-repeat;
+	background-size: cover;
+	
+	h2 {
+		color: $secondary;
+		font-size: rem(34px);
+	}
+
+	p {
+		color: $secondary;
+		font-weight: 400;
+	}
+
+}
+
+.insta-feed-wrap {
+	max-width: rem(970px);
+	padding: rem(30px);
+	background: $white;
+	margin: rem(24px) auto 0;
+}

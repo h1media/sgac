@@ -1,0 +1,58 @@
+.acf-map {
+	width: 100%;
+}
+
+.acf-map img {
+   max-width: inherit !important;
+}
+
+.contact__map {
+	height: rem(476px);
+
+	@include media($L) {
+		margin: 0 10% 5%;
+	}
+
+	@include media($XS) {
+		height: rem(214px);
+	}
+}
+
+.page-template-template-contact {
+
+	.page-content {
+		padding-bottom: 0;
+	}
+}
+
+
+.contact__form {
+	@extend .form-wrap;
+	background: transparent;
+	padding: 0;
+	min-height: rem(700px);
+	max-width: rem(400px);
+	margin: 0 auto rem(44px);
+
+	.field {
+		width: 100%;
+
+		input[type="tel"] {
+			width: 100%;
+		}
+	}
+
+	label {
+		text-transform: none;
+		font-size: rem(18px);
+		font-weight: 500;
+	}
+
+	.inputs-list {
+		text-align: left;
+	}
+
+	textarea {
+		height: rem(160px);
+	}
+}

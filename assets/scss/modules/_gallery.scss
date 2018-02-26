@@ -1,0 +1,38 @@
+.gallery-btn {
+	@extend %transition-fast;
+	color: $white;
+	width: rem(24px);
+	height: rem(24px);
+	background: rgba($black, 0.35);
+	border-radius: 50%;
+	text-align: center;
+	display: block;
+
+	span {
+		font-size: rem(10px);
+	}
+
+	&:hover {
+		color: $white;
+		background: $black;
+	}
+}
+
+.gallery-alt-btn {
+	@extend %transition-fast;
+	display: block;
+	width: rem(37px);
+	padding: rem(20px) 0;
+	background: rgba($white, 0.7);
+	color: $secondary;
+	text-align: center;
+
+	span {
+		font-size: rem(14px);
+	}
+
+	&:hover {
+		color: $secondary;
+		background: $white;
+	}
+}

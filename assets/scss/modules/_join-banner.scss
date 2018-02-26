@@ -1,0 +1,140 @@
+.join-banner {
+	display: flex;
+	align-items: center;
+	min-height: rem(550px);
+	background-size: cover;
+	background-position: center center;
+
+	@include media($L) {
+		text-align: center;
+		display: block;
+		position: relative;
+
+		&:before {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			height: 100%;
+			width: 100%;
+			background: rgba($secondary, 0.7);
+		}
+	}
+
+	.banner__title {
+		font-size: rem(105px);
+		font-family: $banner-font;
+		color: $primary;
+		line-height: rem(117px);
+
+		span {
+			color: $white;
+
+			@include media($L) {
+				color: $primary;
+			}
+		}
+
+		@include media($L) {
+			font-size: rem(70px);
+
+			br {
+				display: none;
+			}
+		}
+
+		@include media($XS) {
+			font-size: rem(49px);
+			line-height: rem(55px);
+		}
+	}
+
+	.banner__lowertext {
+
+		margin-top: rem(43px);
+
+		h4 {
+			color: $white;	
+			font-family: $secondary-font;
+			font-size: rem(35px);	
+			font-weight: 600;	
+			line-height: rem(57px); 
+
+			@include media($L) {
+				margin-bottom: 0;
+			}
+
+			@include media($M) {
+				font-size: rem(28px);
+				line-height: rem(34px);
+				margin-top: rem(24px);
+			}
+
+			@include media($XS) {
+				max-width: rem(220px);
+				margin-left: auto;
+				margin-right: auto;
+			}
+		}
+
+		p {
+			font-size: rem(24px);
+			line-height: rem(32px);
+			color: $primary;
+
+			@include media($L) {
+				font-weight: 400;
+			}
+
+			@include media($M) {
+				max-width: rem(540px);
+				margin: 0 auto;
+			}
+
+
+		}
+
+		@include media($L) {
+			margin-top: rem(12px);
+		}
+	}
+
+	.banner__logo {
+		margin-top: rem(40px);
+		width: 100%;
+		text-align: right;
+
+		img {
+			width: rem(308px);
+		}
+
+		@include media($L) {
+			text-align: center;
+		}
+
+		@include media($L) {
+			img {
+				width: rem(260px);
+			}
+		}
+	}
+
+	.banner__join {
+		width: rem(308px);
+		margin-top: rem(148px);
+		text-align: center;
+		float: right;
+
+		@include media($L) {
+			float: none;
+			width: 100%;
+			margin: rem(48px) 0;
+		}
+	}
+
+	.button--join {
+		display: inline-block;
+		font-size: rem(28px);
+		padding: rem(16px) rem(31px);
+	}
+}

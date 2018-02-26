@@ -1,0 +1,277 @@
+input {
+	@extend %transition-fast;
+	background: $white;
+	border: 1px solid $input-border;
+	height: rem(35px);
+	padding: 0 rem(13px);
+	font-size: rem(15px);
+	border-radius: rem(2px);
+
+	&:focus {
+		outline: none;
+		border-color: darken($input-border, 20%);
+	}
+
+}
+
+.error > input,
+input.error {
+	border-color: $primary;
+	border-left: 3px solid $primary;
+}
+
+select {
+	height: rem(35px);
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+	background: $white;
+	appearance: none;
+	width: rem(16px);
+	height: rem(16px);
+
+	&:focus {
+		outline: none;
+	}
+}
+
+input[type="radio"] {
+	border-radius: 50%;
+	&:checked {
+		border: rem(5px) solid $primary;
+	}
+}
+
+input[type="checkbox"] {
+	&:checked {
+		background: $primary;
+		border-color: $primary;
+
+		&:after {
+			position: absolute;
+			font-family: 'one55';
+			content: '\e806';
+			color: $white;
+			font-size: rem(12px);
+			margin-left: rem(1px);
+		}
+	}
+}
+
+input[type="file"] {
+	height: auto;
+	padding: rem(10px) rem(13px);
+}
+
+textarea {
+	@extend input;
+	height: auto;
+	padding: rem(7px) rem(13px);
+}
+
+.select2-container--default {
+	.select2-selection {
+		@extend input;
+		height: auto;
+		padding: 0;
+	}
+
+	.select2-selection__rendered {
+		padding: rem(3.5px) 0;
+	}
+}
+
+
+.input-search {
+	height: rem(42px);
+	font-weight: 300;
+	border-radius: 0;
+	width: 100%;
+
+	&:focus {
+		border-color: $primary;
+	}
+}
+
+.blog-search__button {
+	@extend %transition-fast;
+	background: $primary;
+	color: $white;
+	height: rem(42px);
+	width: rem(40px);
+	flex-shrink: 0;
+	text-align: center;
+
+	&:hover {
+		background: darken($primary, 15%);
+	}
+}
+
+.form-wrap {
+	padding: rem(30px) rem(40px);
+	background: $form-bg;
+
+	@include media($XS) {
+		padding: rem(16px);
+	}
+
+	.form-columns-1 .field {
+		width: 100%;
+	}
+
+	fieldset.form-columns-1 .hs-form-checkbox-display input[type="checkbox"] {
+		width: rem(16px);
+	}
+
+	
+
+	.hs-form-checkbox-display span {
+		color: $text;
+		display: inline-block;
+		font-size: rem(14px);
+		margin-left: rem(5px);
+		position: relative;
+		top: rem(-3px);
+		font-weight: 400;
+	}
+
+	fieldset.form-columns-1 .hs-form-field .hs-input {
+		width: 100%;
+	}
+
+	.hs-input {
+		font-family: $primary-font;
+		font-size: rem(15px);
+		color: $text;
+	}
+
+	select.hs-input {
+		border-color: $input-border;
+
+		&:focus {
+			outline: none;
+			border-color: darken($input-border, 20%);
+		}
+	}
+
+	.hs_submit .hs-button {
+		color: $primary;
+		border-color: $primary;
+		background: $white;
+
+		&:hover {
+			color: $white;
+			background: $primary;
+		}
+	}
+
+	@include media($XS) {
+		
+		form fieldset .input {
+			input[type="text"],
+			input[type="email"],
+			input[type="tel"],
+			input[type="file"]{ 
+				width: 100% !important;
+			}
+		}
+	}
+
+}
+
+.form__row {
+	display: flex;
+	margin-left: rem(-12px);
+	margin-right: rem(-12px);
+
+	.field {
+		padding-left: rem(12px);
+		padding-right: rem(12px);
+	}
+}
+
+.field {
+	width: 50%;
+	margin-bottom: rem(20px);
+
+	//label,
+	input[type="text"],
+	input[type="email"],
+	input[type="date"],
+	input[type="file"],
+	input[type="tel"],
+	textarea,
+	select {
+		display: block;
+		width: 100%;
+	}
+
+	label {
+		margin-bottom: rem(10px);
+		text-transform: uppercase;
+		font-size: rem(14px);
+		font-weight: 700;
+		line-height: rem(19px);
+		color: $form-label;
+
+		&.required {
+			
+			&:after {
+				content:'*';
+				color: $primary;			
+			}
+
+		}
+	}
+
+	&.field--wide,
+	&.field--file {
+		width: 100%;
+	}
+
+	&.field--textarea {
+		width: 100%;
+		textarea {
+			min-height: rem(112px);
+		}
+	}
+
+}
+
+.form__message {
+
+	h5 {
+		font-size: rem(18px);
+		color: $primary;
+		text-transform: uppercase;
+	}
+
+	p {
+		color: $form-text;
+		line-height: rem(22px);
+	}
+}
+
+.error-msg {
+	display: block;
+	color: $primary;
+	font-size: rem(12px);
+	margin-top: rem(10px);
+}
+
+.form__notice {
+	font-size: rem(12px);
+	line-height: rem(16px);
+	color: $form-text;
+	margin-left: rem(14px);
+	//float: left;
+
+	&:before {
+		font-size: rem(16px);
+		content: '\e819';
+		font-family: 'one55';
+		color: $primary;
+		margin-right: rem(10px);
+	}
+}

@@ -1,0 +1,111 @@
+.utilities-section {
+	background: $blog-utilities;
+
+}
+
+.utilities {
+	align-items: center;
+	display: flex;
+	height: rem(87px);
+	justify-content: space-between;
+
+	@include media($XS) {
+		display: block;
+		height: auto;
+		text-align: center;
+	}
+}
+
+.search .utilities {
+	@include media($M) {
+		justify-content: center;
+	}
+}
+
+.studio-select {
+
+	.select2-container--default {
+		.select2-selection {
+			background: transparent;
+			border: rem(2px) solid $secondary;
+		}
+
+		font-size: rem(14px);
+		font-weight: 500;
+		text-transform: uppercase;
+
+		.select2-selection__rendered {
+			line-height: 1;
+			padding: rem(12px) rem(40px) rem(12px) rem(20px);
+		}
+
+		.select2-selection--single .select2-selection__arrow b {
+			border: none;
+			&:after {
+				color: $secondary;
+				content: '\e803';
+				font-family: 'one55';
+				font-size: rem(12px);
+			}
+		}
+
+		.select2-selection--single .select2-selection__arrow {
+			right: 23px;
+			top: -1px;
+		}
+	}
+}
+
+.studio-select__label {
+	color: $utilities-text;
+	font-weight: 300;
+	margin-right: rem(12px);
+}
+.studio-select__select {
+	width: rem(135px);
+}
+
+.studio-select__dropdown {
+	background: $secondary;
+	color: $white;
+
+	.select2-dropdown {
+		border-radius: 0;
+	}
+
+	.select2-results__option[aria-selected=true] {
+		display: none;
+	}
+
+	.select2-results__option {
+		border: rem(2px) solid $secondary;
+		font-size: rem(14px);
+		font-weight: 500;
+		padding: rem(12px) rem(40px) rem(12px) rem(20px);
+		text-transform: uppercase;
+
+	}
+
+	.select2-results__option--highlighted[aria-selected] {
+		background: $secondary;
+		color: $primary;
+	}
+}
+
+.studio-timetable__download {
+	color: $secondary;
+	font-weight: 500;
+
+	span {
+		margin-right: rem(10px);
+	}
+
+	&:hover {
+		color: $primary;
+		text-decoration: none;
+	}
+
+	@include media($S) {
+		margin: rem(14px) 0;
+	}
+}

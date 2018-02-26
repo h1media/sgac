@@ -1,0 +1,98 @@
+.tabs__list {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.tab__item {
+	@extend %button;
+	float: left;
+	display: block;
+
+	&:nth-child(1n) {
+		border-right: 0;
+	}
+
+	&:hover {
+		cursor: pointer;
+	}
+}
+
+.tabs-primary {
+
+	.tab__item {
+		@extend %button-small;
+		font-size: rem(14px);
+		padding: rem(12px) rem(31px);
+
+		&:last-child() {
+			border-right: 2px solid $secondary;
+		}
+
+		&:hover {
+			background: $white;
+			border-color: $secondary;
+			color: $secondary;
+		}
+
+		&.active {
+			color: $white;
+			background: $secondary;
+		}
+
+		@include media($L) {
+			padding: rem(8px) rem(18px);
+		}
+	}
+}
+
+.tabs-secondary {
+
+	.tabs__list {
+		display: inline-block;
+	}
+
+	.tab__item {
+		font-family: $secondary-font;
+		background: $white;
+		font-size: rem(20px);
+		padding: rem(8px) rem(26px);
+
+		&:hover {
+			background: rgba($primary, 0.1);
+			color: $primary;
+			border-color: $primary;
+		}
+
+		&:last-child() {
+			border-right: 2px solid $primary;
+		}
+
+		&.active {
+			color: $white;
+			background: $primary;
+		}
+
+		@include media($S) {
+			font-size: rem(18px);
+		}
+	}
+}
+
+.tabs-container-wrapper {
+	@extend %transition-slow;
+}
+
+.tab-container {
+	width: 100%;
+	left: 0;
+	@extend %transition-slow;
+	position: absolute;
+	z-index: -99;
+	opacity: 0;
+
+	&.active {
+		opacity: 1;
+		z-index: 1;
+	}
+}

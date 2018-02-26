@@ -1,0 +1,31 @@
+.error404-big {
+	font-size: rem(216px);
+	color: $primary;
+	font-weight: 700;
+	font-family: $secondary-font;
+	line-height: 1;
+	margin-top: rem(32px);
+	display: block;
+
+	@include media($XS) {
+		font-size: rem(125px);
+	}
+}
+
+.error404 {
+
+	.text-container h4 {
+		font-size: rem(26px);
+		font-weight: 500;
+		font-family: $secondary-font;
+		color: $primary;
+	}
+
+	p {
+		color: $text-content;
+
+		a {
+			text-decoration: underline;
+		}
+	}
+}

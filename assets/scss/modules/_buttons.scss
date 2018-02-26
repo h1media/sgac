@@ -1,0 +1,58 @@
+
+.button,
+%button {
+	@extend %transition;
+	display: inline-block;
+	border: none;
+	text-transform: uppercase;
+	color: $primary;
+	font-size: rem(18px);
+	border: 2px solid $primary;
+	font-weight: 500;
+
+	&:hover {
+		text-decoration: none;
+		background: $primary;
+		color: $white;
+
+	}
+
+	&:hover,
+	&:focus,
+	&:active,
+	&:visited {
+		outline: none;
+		text-decoration: none;
+	}
+
+	padding: rem(16px) rem(29px);
+}
+
+.button--big,
+%button-big {
+	padding: rem(16px) rem(31px);
+	font-size: rem(22px);
+	font-weight: 700;
+	border-color: $white;
+	color: $white;
+
+	&:hover {
+		background: $white;
+		color: $primary;
+	}
+}
+
+.button--small,
+%button-small {
+	color: $secondary;
+	border-color: $secondary;
+	padding: rem(16px) rem(31px);
+	font-size: rem(12px);
+	line-height: 1;
+
+	&:hover {
+		background: $secondary;
+		color: $white;
+	}
+}
+

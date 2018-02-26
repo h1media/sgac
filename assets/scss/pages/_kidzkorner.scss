@@ -1,0 +1,54 @@
+table.opening-hours {
+	margin: rem(10px) auto;
+	line-height: rem(27px);
+	color: $text-content;
+
+	td {
+		padding: rem(2px) rem(10px);
+	}
+	
+	tr td:first-child {
+		text-align: right;
+		font-weight: 700;
+	}
+
+	tr td:last-child {
+		text-align: left;
+		font-weight: 300;
+	}
+}
+
+.kidz-buttons {
+
+	.button {
+		margin: 0 rem(12px);
+		font-size: rem(16px);
+		padding: rem(11px) rem(21px);
+
+		@include media($M) {
+			width: 100%;
+			margin: 0;
+			margin-bottom: rem(24px);
+		}
+	}
+}
+
+.kidz-corner-logo {
+	margin-bottom: rem(32px);
+	max-width: 100%;
+}
+
+.page-template-template-kidzkorner {
+
+	@include media($XS) {
+		.gallery-item:nth-child(2),
+		.gallery-item:nth-child(3) {
+			display: none;
+		}
+
+		.page-content {
+			padding-bottom: 0;
+		}
+	}
+	
+}

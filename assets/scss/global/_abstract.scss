@@ -1,0 +1,158 @@
+%clearfix {
+
+	&:before,
+	&:after {
+		display: table;
+		content: '';
+	}
+
+	&:after {
+		clear: both;
+	}
+
+}
+
+%h1 {
+	font-family: $secondary-font;
+	font-size: rem(34px);
+	line-height: rem(41px);
+	color: $primary;
+	font-weight: 500;
+}
+
+%h1-home {
+	@extend %h1;
+	font-size: rem(51px);
+	font-weight: 600;
+	line-height: rem(57px);
+	color: $white;
+
+	span {
+		color: $primary;
+	}
+}
+
+%h2 {
+	margin-top: 0;
+	font-family: $secondary-font;
+	font-size: rem(26px);
+	line-height: rem(33px);
+	font-weight: 500;
+	color: $primary;
+
+	@include media($M) {
+		font-size: rem(20px);
+	}
+}
+
+%h2-home-light {
+	@extend %h2;
+	font-size: rem(44px);
+	line-height: rem(72px);
+	font-weight: 600;
+	color: $white;
+}
+
+%h2-home-dark {
+	@extend %h2;
+	font-size: rem(44px);
+	line-height: rem(72px);
+	font-weight: 700;
+	color: $secondary;
+}
+
+%h3 {
+	font-family: $primary-font;
+	font-size: rem(24px);
+	line-height: rem(32px);
+	font-weight: 300;
+	color: $secondary;
+}
+
+%h3-home {
+	@extend %h3;
+	font-family: $secondary-font;
+	font-size: rem(34px);
+	line-height: rem(41px);
+	font-weight: 500;
+	color: $primary; 
+}
+
+%h3-home-dark {
+	@extend %h3;
+	font-family: $secondary-font;
+	font-size: rem(34px);
+	line-height: rem(41px);
+	font-weight: 500;
+	color: $secondary; 
+}
+
+%h4 {
+	font-family: $primary-font;
+	font-size: rem(24px);
+	line-height: rem(32px);
+	color: $secondary;
+	font-weight: 300;
+}
+
+%h4-home {
+	@extend %h4;
+	color: $white;
+}
+
+%p {
+	font-size: rem(16px);
+	line-height: rem(27px);
+	font-weight: 300;
+	color: $text;
+
+	@include media($M) {
+		font-size: rem(14px);
+		line-height: rem(24px);
+	}
+}
+
+%p-light {
+	@extend %p;
+	font-size: rem(16px);
+	line-height: rem(27px);
+	font-weight: 300;
+	color: $text-light;
+}
+
+
+%transition {
+	transition: 200ms ease-in-out;
+}
+
+%transition-fast {
+	transition: 100ms ease-in-out;
+}
+
+%transition-slow {
+	transition: 400ms ease-in-out;
+}
+
+%box-link {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: block;
+}
+
+%box-title {
+	text-align: center;
+	position: absolute;
+	left: 0;
+	top: 50%;
+	width: 100%;
+	transform: translateY(-50%);
+}
+
+%list-reset {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}

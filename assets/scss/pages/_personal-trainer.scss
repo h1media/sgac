@@ -1,0 +1,56 @@
+.personal-training-form {
+	text-align: left;
+	max-width: rem(450px);
+	margin: rem(24px) auto;
+
+	.field label {
+		text-transform: none;
+	}
+
+	textarea {
+		min-height: rem(155px);
+	}
+
+	.inputs-list {
+		display: flex;
+
+		li {
+			margin-right: rem(16px);
+		}
+	}
+}
+
+.page-template-default {
+
+	.site-header__image {
+		background-position: 30% center;
+	}
+}
+
+.page-template-template-personal-trainer {
+	
+	.instructors__row {
+		margin-bottom: rem(40px);
+	}
+
+	.text-container {
+		> .container {
+
+			// @include media(991px, 'min') {
+			// 	margin-left: rem(-60px);
+			// }
+
+			@include media(991px, 'min') {
+				margin-left: rem(-62px);
+			}
+
+			@include media(1200px, 'min') {
+				margin-left: rem(-170px);
+			}
+
+			@include media(1259px, 'min'){
+				margin-left: rem(-300px);
+			}
+		}
+	}
+}

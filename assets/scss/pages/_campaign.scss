@@ -1,0 +1,225 @@
+.page-template-template-campaign {
+	
+	.image-container {
+		background-position: left top;
+		background-repeat: no-repeat;
+		background-size: 45%;
+		min-height: rem(1100px);
+
+		@include media($L) {
+			background-image: none !important;
+			background-position: top center;
+		}
+
+		@include media($XS) {
+			background-size: 80%;
+		}
+	}
+
+	.page-content {
+		padding-bottom: 0;
+	}
+
+	@include media($L) {
+		div.col-md-offset-6 {
+			width: 100%;
+			margin-left: 0;
+		}
+	}
+}
+
+.campaign-mobile-image {
+	max-width: 100%;
+	height: auto;
+	margin-bottom: rem(24px);
+	display: none;
+
+	@include media($L) {
+		display: block;
+	}
+}
+
+.upper-content {
+
+	h2 {
+		font-weight: 300;
+		font-size: rem(25px);
+
+		@include media($L) {
+			font-weight: 500;
+			font-size: rem(20px);
+		}
+	}
+
+	p, ul li {
+		color: $text-content;
+		font-weight: 300;
+	}
+
+	li {
+		line-height: rem(28px);
+	}
+
+	ul {
+		padding-left: rem(28px);
+
+		@include media($L) {
+			list-style: none;
+		}
+	}
+	
+	@include media($L) {
+		text-align: center;
+		max-width: rem(520px);
+		margin-left: auto;
+		margin-right: auto;
+		//padding-top: rem(580px);
+	}
+
+	@include media(800px) {
+		//padding-top: rem(500px);
+	}
+
+	@include media($M) {
+		//padding-top: rem(480px);
+		//padding-top: 45vh;
+		margin-bottom: rem(32px);
+	}
+
+}
+
+.campaing-image {
+	position: absolute;
+}
+
+.button--campaign {
+	font-size: rem(22px);
+	padding: rem(11px) rem(22px);
+	line-height: 1;
+	margin: rem(24px) 0;
+
+	@include media($XS) {
+		font-size: rem(18px);
+	}
+}
+
+.decor-separator {
+	display: block;
+	width: 100%;
+	height: rem(2px);
+	background: $primary;
+	margin-bottom: rem(24px);
+}
+
+.campaign-form {
+
+	textarea {
+		min-height: rem(72px);
+	}
+
+	.inputs-list {
+		padding-left: 0;
+	}
+
+	.field label {
+		text-transform: none;
+	}
+
+	@include media($L) {
+		text-align: left;
+	}
+}
+
+.facilities-carousel-section {
+	text-align: center;
+	padding: rem(48px) 0;
+	color: $black;
+	background-color: $facilities-carousel;
+	background-image: url('../img/bgs/bg-facilities-section.jpg'); 
+
+	h2 {
+		color: $black;
+		font-size: rem(24px);
+		font-weight: 400;
+	}
+
+	.carousel-wrap {
+		position: relative;
+		margin-top: rem(32px);
+	}
+
+	.slide {
+		display: inline-block;
+	}
+}
+
+.facilities-carousel__nav {
+	
+	.gallery-btn {
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+
+		span {
+			position: relative;
+		}
+	}
+
+	.gallery-btn__next {
+		right: rem(-10px);
+
+		span {
+			right: -1px;
+		}
+	}
+
+	.gallery-btn__prev {
+		left: rem(-10px);
+
+		span {
+			left: -1px;
+		}
+	}
+}
+
+
+.facilities-carousel__zoom  {
+	display: block;
+	position: relative;
+	overflow: hidden;
+	background: $black;
+
+	img {
+		@extend %transition;
+	}
+
+	&:after {
+		@extend %transition;
+		content: '\e82b';
+		font-family: 'one55';
+		display: block;
+		position: absolute;
+		color: $white;
+		right: rem(16px);
+		bottom: rem(6px);
+		font-size: rem(24px);
+		transform: translateY(110%);
+	}
+
+	&:hover {
+		
+		&:after {
+			transform: translateY(0);
+		}
+
+		img {
+			opacity: 0.6;
+		}
+	}
+}
+
+.facilities-carousel-section__bottom-text {
+	font-size: rem(18px);
+	color: $black;
+	margin-top: rem(32px);
+}

@@ -1,0 +1,100 @@
+*, *:before, *:after {
+	box-sizing: border-box;
+}
+
+html {
+	-webkit-font-smoothing: antialiased;
+	text-rendering: optimizeLegibility;
+	font-size: 16px;
+}
+
+body {
+	font-size: 16px;
+	font-family: $primary-font;
+	color: $text;
+	font-size: 100%;
+}
+
+a {
+	color: $primary;
+}
+a:hover, 
+a:focus, 
+a:active {
+	color: $primary;
+	text-decoration: underline;
+}
+
+button:hover {
+	cursor: pointer;
+}
+
+button:hover,
+button:active,
+button:focus {
+	outline: none;
+}
+
+button {
+	background: transparent;
+	border: none;
+}
+
+h1 {
+	@extend %h1;
+
+	&.home {
+		@extend %h1-home;
+	}
+}
+
+h2 {
+	@extend %h2;
+
+	&.home-light {
+		@extend %h2-home-light;
+	}
+	&.home-dark {
+		@extend %h2-home-dark;
+	}
+}
+
+h3 {
+	@extend %h3;
+
+	&.home {
+		@extend %h3-home;
+	}
+	&.home-dark {
+		@extend %h3-home-dark;
+	}
+
+}
+
+h4 {
+	@extend %h4;
+	
+	&.home {
+		@extend %h4-home;
+	}
+}
+
+p {
+	@extend %p;
+
+	&.light {
+		@extend %p-light;
+	}
+
+	a {
+		color: $primary;
+	}
+}
+
+.container--narrow {
+	padding: 0 rem(64px);
+
+	@include media($M) {
+		padding: 0 rem(16px);
+	}
+}

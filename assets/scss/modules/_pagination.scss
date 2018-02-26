@@ -1,0 +1,38 @@
+.page-numbers__list {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+
+	li {
+		vertical-align: middle;
+		display: inline-block;
+	}
+
+	.page-numbers {
+		@extend %transition-fast;
+		height: rem(34px);
+		width: rem(34px);
+		text-align: center;
+		border: rem(1px) solid $pagination-border;
+		display: block;
+		color: $pagination-text;
+		line-height: rem(31px);
+
+		span {
+			font-size: rem(14px);
+			line-height: rem(11px);
+		}
+
+		&:hover {
+			color: $primary;
+			background: $pagination-border;
+			text-decoration: none;
+		}
+
+		&.current {
+			background: $primary;
+			color: $white;
+			border-color: $primary;
+		}
+	}
+}

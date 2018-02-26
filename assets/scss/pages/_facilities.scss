@@ -1,0 +1,160 @@
+.page-template-template-facilities {
+	.page-content {
+		padding-top: 0;
+	}
+}
+
+.facility {
+	padding: rem(60px) 0;
+
+	.transparent-box {
+		background: rgba($secondary, 0.95);
+		padding: rem(50px);
+
+		p {
+			color: $grey;
+			line-height: 27px;
+		}
+
+		p + h2 {
+			margin-top: rem(26px);
+		}
+
+		@include media($M) {
+			text-align: center;
+		}
+
+		@include media($XS) {
+			padding: rem(24px);
+
+			p {
+				line-height: rem(22px);
+			}
+		}
+	}
+
+	img {
+		max-width: 100%;
+		height: auto;
+	}
+}
+
+.facility--bgimage {
+	padding: rem(126px) 0;
+	background-size: cover;
+	background-position: center center;
+
+	@include media($XS) {
+		padding: rem(24px) 0;
+	}
+}
+
+.facility--image-below {
+	text-align: center;
+	padding-bottom: 0;
+
+	.below-image {
+		margin-top: rem(56px);
+		min-height: rem(620px);
+		background-size: cover;
+		background-position: center center;
+
+		@include media($M) {
+			min-height: rem(420px);
+		}
+
+		@include media($XS) {
+			margin-top: rem(32px);
+			min-height: rem(220px);
+		}
+	}
+
+	@include media($XS) {
+		padding-top: rem(24px);
+	}
+}
+
+.facility--images-below {
+	@extend .facility--image-below;
+	padding-bottom: rem(60px);
+}
+
+.facility--cardio {
+	padding: rem(12px) 0;
+
+	.row {
+		display: flex;
+		align-items: center;
+
+		@include media($XS) {
+			display: block;
+			text-align: center;
+		}
+	}
+
+	.container {
+		@include media($M) {
+			max-width: rem(600px);
+		}
+		padding-left: rem(24px);
+		padding-right: rem(24px);
+	}
+}
+
+.facility--standard {
+	@include media($XS) {
+		text-align: center;
+
+		h2 {
+			margin-top: rem(24px);
+		}
+	}
+}
+
+.cardio__image {
+	width: 100%;
+	text-align: right;
+}
+
+.button--kidzkorner {
+	padding: rem(11px) rem(21px);
+	font-size: rem(16px);
+	margin-top: rem(12px);
+	display: inline-block;
+
+	@include media($XS) {
+		width: 100%;
+	}
+}
+
+
+.cafe-images {
+
+	img {
+		display: inline-block;
+		margin: 0 rem(10px);
+	}
+
+	@include media($L) {
+		img {
+			max-width: 100%;
+			height: auto;
+		}
+		
+		display: flex;
+		overflow: hidden;
+	}
+
+
+	@include media($XS) {
+		display: block;
+
+		img {
+			display: block;
+			max-width: 100%;
+			height: auto;
+			margin: 0;
+			margin-bottom: rem(16px);
+		}
+	}
+}

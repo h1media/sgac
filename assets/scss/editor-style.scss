@@ -1,0 +1,19 @@
+@import 'global/variables';
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: $secondary-font;
+	color: $primary;
+	font-weight: 500;
+}
+
+p {
+	font-family: $primary-font;
+	color: $text-content;
+	font-weight: 300;
+}
+
+li {
+	font-family: $primary-font;
+	color: $text-content;
+	font-weight: 300;
+}
