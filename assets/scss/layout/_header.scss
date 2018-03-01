@@ -5,7 +5,7 @@
 	margin-bottom: rem(8px);
 
 	img {
-		min-width: rem(226px);
+		width: rem(226px);
 	}
 
 	@include media($M) {
