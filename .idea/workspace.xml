@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="13f18935-1915-488d-b327-fc5b2c72e5d5" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/assets/scss/layout/_header.scss" afterPath="$PROJECT_DIR$/assets/scss/layout/_header.scss" />
       <change beforePath="$PROJECT_DIR$/dist/css/app.min.css" afterPath="$PROJECT_DIR$/dist/css/app.min.css" />
     </list>
@@ -62,8 +61,8 @@
       <file leaf-file-name="_header.scss" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/assets/scss/layout/_header.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="5" column="23" lean-forward="false" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
+            <state relative-caret-position="126">
+              <caret line="7" column="24" lean-forward="false" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
               <folding />
             </state>
           </provider>
@@ -246,12 +245,12 @@
       <workItem from="1519900338270" duration="1699000" />
       <workItem from="1519906932932" duration="1328000" />
       <workItem from="1519908836235" duration="773000" />
-      <workItem from="1519911420688" duration="959000" />
+      <workItem from="1519911420688" duration="1247000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15360000" />
+    <option name="totallyTimeSpent" value="15648000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="-4" width="1615" height="1054" extended-state="6" />
@@ -674,8 +673,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/scss/layout/_header.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="5" column="23" lean-forward="false" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
+        <state relative-caret-position="126">
+          <caret line="7" column="24" lean-forward="false" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
           <folding />
         </state>
       </provider>
