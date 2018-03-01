@@ -48,7 +48,6 @@
 
 .intro-home {
 	@extend .intro-section;
-	padding-top: rem(65px);
 	padding-bottom: rem(65px);
 	//padding: rem(42px) 0;
 	background-color: $secondary;
@@ -193,7 +192,7 @@
 		font-size: rem(16px);
 		font-weight: 300;
 		line-height: rem(27px);
-
+		margin: rem(40px) 0;
 
 		@include media($M) {
 			font-size: rem(14px);
