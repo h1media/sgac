@@ -85,7 +85,7 @@
 		width: rem(43px);
 		font-size: rem(14px);
 		position: absolute;
-		top: rem(-5px);
+		top: rem(-6px);
 		line-height: rem(24px);
 
 
@@ -131,7 +131,7 @@
 	background: $precinct-promo;
 
 	.bar__title {
-		background: darken($precinct-promo, 6%);
+		background: $secondary;
 
 		@include media($L) {
 			text-align: left;
@@ -146,7 +146,7 @@
 
 	.bar__icon {
 		left: 0;
-		background: $precinct-promo;
+		background: darken($secondary, 6%);
 	}
 
 	.promo__content {
@@ -163,7 +163,7 @@
 
 		p, li {
 			@extend %p-light;
-			color: $white;
+			color: $text-dark;
 		}
 
 		ul {
@@ -177,7 +177,7 @@
 	background: $precinct-partners;
 
 	.bar__title {
-		background: darken($precinct-partners, 6%);
+		background: darken($precinct-partners, 45%);
 
 		.right-width {
 			width: rem(320px);
@@ -191,7 +191,7 @@
 
 	.bar__icon {
 		right: 0;
-		background: $precinct-partners;
+		background: darken($precinct-partners, 55%);
 	}
 
 	.bar__content {
@@ -209,8 +209,8 @@
 
 .button--promo {
 	margin-top: rem(4px);
-	color: $white;
-	border-color: $white;
+	color: $primary;
+	border-color: $primary;
 	padding: rem(11px) rem(21px);
 
 	&:hover {

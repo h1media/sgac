@@ -17,7 +17,6 @@
 .site-footer__left {
 	@include media($L) {
 		overflow: hidden;
-		margin-bottom: rem(54px);
 	}
 
 	@include media($XS) {
@@ -49,7 +48,6 @@
 
 .footer__logo {
 	width: 100%;
-	text-align: center;
 
 	img {
 		width: rem(226px);
@@ -57,7 +55,7 @@
 
 	@include media($L) {
 		float: left;
-		width: 25%;
+		margin-bottom: rem(18px);
 
 		img {
 			max-width: 100%;
@@ -65,11 +63,10 @@
 	}
 
 	@include media($M) {
-		width: 33.333333%;
+		text-align: center;
 	}
 
 	@include media($XS) {
-		width: 100%;
 		float: none;
 	}
 }
@@ -203,7 +200,6 @@
 }
 
 .footer-connect {
-	margin-top: rem(22px);
 
 	@include media($M) {
 		.social-icons {
@@ -228,11 +224,11 @@
 	}
 
 	a {
-		color: inherit;
+		color: $footer-links;
 
 		&:hover {
 			text-decoration: none;
-			color: $text-light;
+			color: $primary;
 		}
 
 		@include media($XS) {

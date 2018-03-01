@@ -633,13 +633,13 @@
 .home-instagram-section {
 	text-align: center;
 	padding: rem(60px) 0;
-	background: url( '../img/bgs/bg-insta-feed-section.jpg' );
-	background-repeat: no-repeat;
-	background-size: cover;
 	
 	h2 {
 		color: $secondary;
 		font-size: rem(34px);
+		&:after {
+			@include headingBorder;
+		}
 	}
 
 	p {
