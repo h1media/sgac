@@ -1,6 +1,12 @@
 .site-header__logo {
 	width: 100%;
 	text-align: center;
+	margin-top: rem(8px);
+	margin-bottom: rem(8px);
+
+	img {
+		width: rem(226px);
+	}
 
 	@include media($M) {
 		img {
@@ -16,6 +22,10 @@
 .site-header__button {
 	width: 100%;
 	text-align: right;
+	margin-top: rem(8px);
+	@include media($M) {
+		margin-top: 0;
+	}
 }
 
 .site-header__overlay {
@@ -38,13 +48,6 @@
 	background-position: center center;
 	position: relative;
 	z-index: 2;
-	clip-path: polygon(
-		100% 0, 
-		100% 85%, 
-		50% 100%, 
-		0% 85%, 
-		0% 0%
-	);
 
 	@include media($L) {
 		min-height: rem(546px);
@@ -52,14 +55,6 @@
 
 	@include media($M) {
 		min-height: rem(386px);
-
-		clip-path: polygon(
-			100% 0, 
-			100% 92%, 
-			50% 100%, 
-			0% 92%, 
-			0% 0%
-		);
 	}
 
 	@include media($XS) {
@@ -108,11 +103,13 @@
 	@extend %transition;
 	position: fixed;
 	width: 100%;
-	top: rem(30px);
+	top: rem(0px);
+	padding: rem(10px) 0;
 	z-index: 99;
+	background: $secondary;
 
-	@include media($XS) {
-		top: rem(16px);
+	.social-icons {
+		margin-top: rem(8px);
 	}
 
 	&.top--small {
@@ -121,21 +118,6 @@
 		padding: rem(10px) 0;
 
 		.site-header__logo img {
-			padding: rem(8px);
-			position: absolute;
-			left: 50%;
-			top: rem(-10px);
-			transform: translateX(-50%);
-			background: $secondary;
-			max-width: rem(130px);
-
-			clip-path: polygon(
-				100% 0, 
-				100% 90%, 
-				50% 100%, 
-				0% 90%, 
-				0% 0%
-			);
 
 			@include media($M) {
 				left: 0;

@@ -1,5 +1,5 @@
 var config = {
-    devUrl: 'www.one55.dev',
+    devUrl: 'sgac.loc.com',
     sass: 'assets/scss/**/*.{scss,sass}',
     sassFolder: 'assets/sass/',
     css: 'dist/css',

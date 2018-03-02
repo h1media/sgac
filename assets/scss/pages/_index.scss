@@ -3,7 +3,7 @@
 }
 .home-banner {
 	position: absolute;
-	top: 60%;
+	top: 50%;
 	left: 50%;
 	text-align: center;
 	z-index: 999;
@@ -48,10 +48,9 @@
 
 .intro-home {
 	@extend .intro-section;
-	padding-top: rem(145px);
 	padding-bottom: rem(65px);
 	//padding: rem(42px) 0;
-	background-image: url('../img/bgs/bg-hey-you.jpg');
+	background-color: $secondary;
 	background-size: 50%;
 	background-repeat: repeat-y;
 
@@ -64,6 +63,7 @@
 	@include media($XS) {
 		background-repeat: repeat-x;
 		background-size: 150%;
+		padding-top: rem(65px);
 
 		.container {
 			padding-left: rem(24px);
@@ -71,7 +71,6 @@
 		}
 	}
 }
-
 
 .left-intro {
 	margin-top: rem(28px);
@@ -87,10 +86,11 @@
 		text-align: center;
 		padding-right: 0;
 		margin-top: 0;
-		background-image: url('../img/bgs/bg-hey-you.jpg');
 		margin-left: rem(-25px);
 		margin-right: rem(-23px);
-		padding-bottom: rem(24px);
+		padding: rem(24px);
+		padding-top:rem(68px);
+		background-color: $primary;
 	}
 
 	p, h2, {
@@ -100,60 +100,69 @@
 	h2 {
 		font-size: rem(44px);
 		font-weight: 700;
-		text-transform: uppercase;
 		margin-bottom: 0;
 
-		@include media($XS) {
-			font-size: rem(34px);
-			margin-top: 0;
+		@include media($L) {
+			font-size: rem(26px);
+			line-height: rem(29px);
+		}
+
+		@include media($M) {
+			font-size: rem(20px);
 		}
 	}
 
 	p {
-		font-size: rem(24px);
+		font-size: rem(16px);
 		font-weight: 300;
 		margin: rem(40px) 0;
+		line-height: rem(27px);
+		min-height: rem(110px);
 
-		@include media($L) {
-			font-size: rem(18px);
-			margin: rem(20px) 0;
-			line-height: rem(28px);
-		}
-
-		@include media($XS) {
-			max-width: 80%;
-			margin-left: auto;
-			margin-right: auto;
+		@include media($M) {
+			font-size: rem(14px);
+			line-height: rem(24px);
 		}
 	}
 
 	.button {
-		color: $white;
+		font-size: rem(18px);
+		padding: rem(11px) 0;
+		text-align: center;
+		width: rem(148px);
+		margin-left: rem(22px);
 		border-color: $white;
+		color: $white;
 
 		&:hover {
-			color: $primary;
 			background: $white;
-			border-color: $white;
+			color: $primary;
 		}
 
 		@include media($L) {
+			width: rem(100px);
+			margin-left: rem(10px);
 			font-size: rem(14px);
-			margin-top: rem(51px);
-			padding: rem(12px) rem(18px);
 		}
 
 		@include media($M) {
-			margin-top: rem(38px);
+			width: rem(90px);
+
+		}
+
+		@include media($S) {
+			margin-bottom: rem(16px);
+			width: 100%;
 		}
 
 		@include media($XS) {
-			margin-top: rem(8px);
+			margin-left: 0;
 		}
 	}
 }
 
 .right-intro {
+	margin-top: rem(28px);
 	text-align: left;
 	padding-left: rem(64px);
 
@@ -169,9 +178,9 @@
 	}
 
 	h2 {
-		font-size: rem(34px);
-		font-weight: 500;
-		line-height: rem(41px);
+		font-size: rem(44px);
+		font-weight: 700;
+		color: $white;
 
 		@include media($L) {
 			font-size: rem(26px);
@@ -184,10 +193,12 @@
 	}
 
 	p {
-		color: $text-content;
+		color: $white;
 		font-size: rem(16px);
 		font-weight: 300;
 		line-height: rem(27px);
+		margin: rem(40px) 0;
+		min-height: rem(110px);
 
 		@include media($M) {
 			font-size: rem(14px);
@@ -205,6 +216,13 @@
 		text-align: center;
 		width: rem(148px);
 		margin-right: rem(22px);
+		border-color: $white;
+		color: $white;
+
+		&:hover {
+			background: $white;
+			color: $secondary;
+		}
 
 		@include media($L) {
 			width: rem(100px);
@@ -225,6 +243,21 @@
 	
 }
 
+.offer-headline {
+	text-align: center;
+	font-size: rem(34px);
+	color: $secondary;
+
+	&:after {
+		@include headingBorder;
+	}
+}
+
+.offer-text {
+	text-align: center;
+    line-height: rem(25px);
+    margin-bottom: rem(40px);
+}
 
 .offer-box {
 	@extend %transition;
@@ -248,6 +281,25 @@
 	}
 }
 
+.offer-col:nth-of-type(2) .offer-box {
+	background: #e25918;
+}
+.offer-col:nth-of-type(3) .offer-box {
+	background: #714772;
+}
+.offer-col:nth-of-type(4) .offer-box {
+	background: #bd3148;
+}
+.offer-col:nth-of-type(5) .offer-box {
+	background: #406f6c;
+}
+.offer-col:nth-of-type(6) .offer-box {
+	background: #00243c;
+}
+.offer-col:nth-of-type(7) .offer-box {
+	background: #105786;
+}
+
 .offer-box__title {
 	@extend %box-title;
 	color: $white;
@@ -258,7 +310,9 @@
 	padding: 0 rem(24px);
 
 	span {
-		color: $primary;
+		color: $white;
+		font-size:rem(20px);
+		font-weight: normal;
 	}
 
 	@include media($L) {
@@ -321,10 +375,8 @@
 	height: rem(420px);
 	border: none;
 	background-color: $white;
-	background-repeat: no-repeat;
-	background-size: 100%;
-	background: url('../img/bgs/featured-offer.jpg');
-	padding: rem(20px);
+	border: 3px solid $secondary;
+	color: $secondary;
 
 	@include media($L) {
 		width: 100%;
@@ -340,9 +392,10 @@
 	.featured-inner {
 		height: 100%;
 		@extend %transition;
-		padding: rem(40px);
-		background: $secondary;
+		padding: rem(60px) rem(40px);
+		background: $white;
 		border: 3px solid transparent;
+		color: $secondary;
 
 		@include media($L) {
 			background: transparent;
@@ -383,7 +436,7 @@
 		font-size: rem(33px);
 		line-height: rem(39px);
 		font-weight: 300;
-		color: $white;
+		color: $secondary;
 
 		span {
 			color: $primary;
@@ -405,16 +458,13 @@
 	}
 
 	&:hover {
-		border: none;
-		background: url('../img/bgs/featured-offer.jpg');
+		border: 3px solid $secondary;
 	}
 }
 
 .home-promo-boxes {
 	padding: rem(52px) 0;
-	background-color: $secondary;
-	background-image: url('../img/bgs/bg-offers.jpg');
-	background-size: cover;
+	background-color: $white;
 
 	@include media($M) {
 		padding-bottom: rem(16px);
@@ -633,13 +683,13 @@
 .home-instagram-section {
 	text-align: center;
 	padding: rem(60px) 0;
-	background: url( '../img/bgs/bg-insta-feed-section.jpg' );
-	background-repeat: no-repeat;
-	background-size: cover;
 	
 	h2 {
 		color: $secondary;
 		font-size: rem(34px);
+		&:after {
+			@include headingBorder;
+		}
 	}
 
 	p {
