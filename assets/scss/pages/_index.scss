@@ -310,6 +310,7 @@
 	span {
 		color: $white;
 		font-size:rem(20px);
+		font-weight: normal;
 	}
 
 	@include media($L) {

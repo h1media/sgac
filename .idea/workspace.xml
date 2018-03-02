@@ -5,9 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="13f18935-1915-488d-b327-fc5b2c72e5d5" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/assets/scss/pages/_index.scss" afterPath="$PROJECT_DIR$/assets/scss/pages/_index.scss" />
-      <change beforePath="$PROJECT_DIR$/dist/css/app.min.css" afterPath="$PROJECT_DIR$/dist/css/app.min.css" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -21,8 +19,8 @@
       <file leaf-file-name="_index.scss" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/assets/scss/pages/_index.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="122">
-              <caret line="311" column="25" lean-forward="true" selection-start-line="311" selection-start-column="25" selection-end-line="311" selection-end-column="25" />
+            <state relative-caret-position="140">
+              <caret line="312" column="28" lean-forward="true" selection-start-line="312" selection-start-column="28" selection-end-line="312" selection-end-column="28" />
               <folding />
             </state>
           </provider>
@@ -326,12 +324,12 @@
       <workItem from="1519988383336" duration="1790000" />
       <workItem from="1519990199693" duration="1788000" />
       <workItem from="1519992015567" duration="1580000" />
-      <workItem from="1519993843658" duration="425000" />
+      <workItem from="1519993843658" duration="533000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="33438000" />
+    <option name="totallyTimeSpent" value="33546000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="-4" width="1615" height="1054" extended-state="6" />
@@ -721,8 +719,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/scss/pages/_index.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="122">
-          <caret line="311" column="25" lean-forward="true" selection-start-line="311" selection-start-column="25" selection-end-line="311" selection-end-column="25" />
+        <state relative-caret-position="140">
+          <caret line="312" column="28" lean-forward="true" selection-start-line="312" selection-start-column="28" selection-end-line="312" selection-end-column="28" />
           <folding />
         </state>
       </provider>
