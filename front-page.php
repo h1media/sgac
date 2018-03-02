@@ -2,7 +2,7 @@
 /**
  * The front page template file
  *
- * @package one55
+ * @package SGAC
  */
 
 get_header(); ?>

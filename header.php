@@ -2,7 +2,7 @@
 /**
  * The header
  *
- * @package one55
+ * @package SGAC
  */
 
 ?><!DOCTYPE html>
@@ -44,7 +44,7 @@ $header_image_class = ! empty( $header_image ) ? 'header-image' : 'header-noimag
 
 						<?php if ( $join = get_field( 'join_now_link', 'option' ) ) : ?>
 							<a href="<?php echo esc_url( $join ); ?>" target="_blank" class="button">
-								<?php esc_html_e( 'Join now', 'one55' ); ?>
+								<?php esc_html_e( 'Join now', 'SGAC' ); ?>
 							</a>
 						<?php endif; ?>
 					</div>
@@ -99,7 +99,7 @@ $header_image_class = ! empty( $header_image ) ? 'header-image' : 'header-noimag
 						<div class="site-header__button">
 							<?php if ( $join_link = get_field( 'join_now_link', 'option' ) ) : ?>
 								<a href="<?php echo esc_url( $join_link ); ?>" target="_blank" class="button header-join">
-									<?php esc_html_e( 'Join now', 'one55' ); ?>
+									<?php esc_html_e( 'Join now', 'SGAC' ); ?>
 								</a>
 							<?php endif; ?>
 							<button class="button menu-button">
@@ -109,7 +109,7 @@ $header_image_class = ! empty( $header_image ) ? 'header-image' : 'header-noimag
 									<span></span>
 									<span></span>
 								</span>
-								<?php echo esc_html_e( 'menu', 'one55' ); ?>
+								<?php echo esc_html_e( 'menu', 'SGAC' ); ?>
 							</button>
 						</div>	
 						<div class="side-menu-overlay"></div>
@@ -124,7 +124,7 @@ $header_image_class = ! empty( $header_image ) ? 'header-image' : 'header-noimag
 								?>
 								<?php if ( $join_link = get_field( 'join_now_link', 'option' ) ) : ?>
 									<div class="menu-side__button">
-										<a href="<?php echo esc_url( $join_link ); ?>" target="_blank" class="button"><?php esc_html_e( 'Join now', 'one55' ); ?></a>
+										<a href="<?php echo esc_url( $join_link ); ?>" target="_blank" class="button"><?php esc_html_e( 'Join now', 'SGAC' ); ?></a>
 									</div>
 								<?php endif; ?>
 							</div>

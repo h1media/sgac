@@ -88,7 +88,8 @@
 		margin-top: 0;
 		margin-left: rem(-25px);
 		margin-right: rem(-23px);
-		padding-bottom: rem(24px);
+		padding: rem(24px);
+		padding-top:rem(68px);
 		background-color: $primary;
 	}
 
@@ -115,6 +116,7 @@
 		font-size: rem(16px);
 		font-weight: 300;
 		margin: rem(40px) 0;
+		line-height: rem(27px);
 
 		@include media($M) {
 			font-size: rem(14px);
@@ -130,6 +132,12 @@
 		margin-left: rem(22px);
 		border-color: $white;
 		color: $white;
+
+		&:hover {
+			background: $white;
+			color: $primary;
+		}
+
 		@include media($L) {
 			width: rem(100px);
 			margin-left: rem(10px);
@@ -144,6 +152,10 @@
 		@include media($S) {
 			margin-bottom: rem(16px);
 			width: 100%;
+		}
+
+		@include media($XS) {
+			margin-left: 0;
 		}
 	}
 }
@@ -204,6 +216,12 @@
 		margin-right: rem(22px);
 		border-color: $white;
 		color: $white;
+
+		&:hover {
+			background: $white;
+			color: $secondary;
+		}
+
 		@include media($L) {
 			width: rem(100px);
 			margin-right: rem(10px);

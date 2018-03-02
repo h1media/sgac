@@ -502,5 +502,3 @@ function maintenance_redirect() {
 	}
 }
 //add_action( 'init', 'maintenance_redirect' );
-
-add_filter('show_admin_bar', '__return_false');
