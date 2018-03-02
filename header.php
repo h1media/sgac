@@ -97,11 +97,6 @@ $header_image_class = ! empty( $header_image ) ? 'header-image' : 'header-noimag
 					</div>
 					<div class="col-sm-4 col-xs-6">
 						<div class="site-header__button">
-							<?php if ( $join_link = get_field( 'join_now_link', 'option' ) ) : ?>
-								<a href="<?php echo esc_url( $join_link ); ?>" target="_blank" class="button header-join">
-									<?php esc_html_e( 'Join now', 'SGAC' ); ?>
-								</a>
-							<?php endif; ?>
 							<button class="button menu-button">
 								<span class="menu-button__icon">
 									<span></span>
