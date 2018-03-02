@@ -308,7 +308,8 @@
 	padding: 0 rem(24px);
 
 	span {
-		color: $primary;
+		color: $white;
+		font-size:rem(20px);
 	}
 
 	@include media($L) {
@@ -388,7 +389,7 @@
 	.featured-inner {
 		height: 100%;
 		@extend %transition;
-		padding: rem(40px);
+		padding: rem(60px) rem(40px);
 		background: $white;
 		border: 3px solid transparent;
 		color: $secondary;
