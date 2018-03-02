@@ -44,7 +44,7 @@ $header_image_class = ! empty( $header_image ) ? 'header-image' : 'header-noimag
 
 						<?php if ( $join = get_field( 'join_now_link', 'option' ) ) : ?>
 							<a href="<?php echo esc_url( $join ); ?>" target="_blank" class="button">
-								<?php esc_html_e( 'Join now', 'SGAC' ); ?>
+								<?php esc_html_e( 'ABOUT THE CENTER', 'SGAC' ); ?>
 							</a>
 						<?php endif; ?>
 					</div>

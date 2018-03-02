@@ -8,13 +8,30 @@
 ?>
 <div class="home-promo-boxes">
 	<div class="container">
-		<div class="promo-row">
-			<?php
+        <?php
+			$f_offer_h = get_field( 'offer_headline' );
+			$f_offer_t = get_field( 'offer_text' );
 			$f_offer_title = get_field( 'featured_offer_title' );
 			$f_offer_text = get_field( 'featured_offer_text' );
 			$f_offer_link = get_field( 'featured_offer_link' );
 
+        if ( $f_offer_h && $f_offer_t ) : ?>
+            <div class="row">
+                <div class="col-lg-offset-2 col-lg-8">
+                    <h2 class="offer-headline">
+		                <?php echo esc_html( $f_offer_h ); ?>
+                    </h2>
+                    <div class="offer-text">
+		                <?php echo wp_kses_post( $f_offer_t ); ?>
+                    </div>
+                </div>
+            </div>
 
+        <?php endif; ?>
+
+		<div class="promo-row">
+
+            <?php
 			if ( $f_offer_title && $f_offer_text && $f_offer_link ) : ?>
 				<div class="offer-col offer-col--featured">
 					<div class="offer-box offer--featured">
