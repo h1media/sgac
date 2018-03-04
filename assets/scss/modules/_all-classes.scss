@@ -26,6 +26,11 @@
     background: $all-class-bg-3;
   }
 
+  .classes__image img {
+    width: 100%;
+    height: auto;
+  }
+
   .classes__title h3 {
     font-weight: 700;
     font-size: rem(26px);

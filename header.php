@@ -38,15 +38,21 @@ $header_image_class = ! empty( $header_image ) ? 'header-image' : 'header-noimag
 
 				<?php if ( is_front_page() ) : ?>
 					<div class="home-banner">
-						<?php if ( $h1 = get_field( 'title' ) ) : ?>
-							<h1 class="home"><?php echo wp_kses_post( $h1 ); ?></h1>
-						<?php endif; ?>
-
-						<?php if ( $join = get_field( 'join_now_link', 'option' ) ) : ?>
-							<a href="<?php echo esc_url( $join ); ?>" target="_blank" class="button">
-								<?php esc_html_e( 'ABOUT THE CENTER', 'SGAC' ); ?>
-							</a>
-						<?php endif; ?>
+					<?php
+					$homeTitle = get_field( 'home_banner_title' );
+					$homeBtnText = get_field( 'home_button_text' );
+					$homeBtnUrl = get_field( 'home_button_url' );
+					if ( ! empty ( $homeTitle ) ) {
+							?>
+							<h1 class="home"><?php echo esc_html( $homeTitle ); ?></h1>
+						<?php
+						}
+						if ( ! empty( $homeBtnText ) && ! empty( $homeBtnUrl ) ) {
+							?>
+							<a href="<?php echo esc_url( $homeBtnUrl ); ?>" target="_blank" class="button"><?php echo esc_html( $homeBtnText ); ?></a>
+							<?php
+						}
+						?>
 					</div>
 				<?php endif; ?>
 			</div>

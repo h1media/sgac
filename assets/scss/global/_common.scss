@@ -107,4 +107,7 @@ p {
 
 .container--wide {
 	width: 1440px;
+		@include media($XXL) {
+			width:100%;
+	}
 }
