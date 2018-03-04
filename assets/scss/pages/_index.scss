@@ -7,10 +7,10 @@
 	left: 50%;
 	text-align: center;
 	z-index: 999;
-	transform: translate(-50%, -60%);
+	transform: translate(-50%, -50%);
 
 	h1 {
-		max-width: rem(850px); 
+		max-width: rem(670px);
 
 		@include media($L) {
 			max-width: 100%;
@@ -51,8 +51,8 @@
 	padding-bottom: rem(65px);
 	//padding: rem(42px) 0;
 	background-color: $secondary;
-	background-size: 50%;
-	background-repeat: repeat-y;
+	background: linear-gradient(to right, $primary 50%, $secondary 50%);
+	//background-image: none;
 
 	@include media($L) {
 		padding-top: rem(135px);
@@ -73,7 +73,7 @@
 }
 
 .left-intro {
-	margin-top: rem(28px);
+	margin-top: rem(56px);
 	text-align: right;
 	color: $white;
 	padding-right: rem(64px);
@@ -126,11 +126,10 @@
 	}
 
 	.button {
-		font-size: rem(18px);
-		padding: rem(11px) 0;
+		font-size: rem(16px);
+		padding: rem(11px) rem(20px);
 		text-align: center;
-		width: rem(148px);
-		margin-left: rem(22px);
+		margin-left: rem(10px);
 		border-color: $white;
 		color: $white;
 
@@ -162,7 +161,7 @@
 }
 
 .right-intro {
-	margin-top: rem(28px);
+	margin-top: rem(56px);
 	text-align: left;
 	padding-left: rem(64px);
 
@@ -208,16 +207,21 @@
 
 	.right-buttons {
 		margin-top: rem(32px);
+		margin-right: rem(-116px);
 	}
 
 	.button {
-		font-size: rem(18px);
-		padding: rem(11px) 0;
+		font-size: rem(16px);
+		padding: rem(11px) rem(20px);
 		text-align: center;
-		width: rem(148px);
-		margin-right: rem(22px);
+		//width: rem(148px);
+		margin-right: rem(10px);
 		border-color: $white;
 		color: $white;
+
+		&:last-child {
+			margin-right: 0;
+		}
 
 		&:hover {
 			background: $white;
@@ -245,7 +249,7 @@
 
 .offer-headline {
 	text-align: center;
-	font-size: rem(34px);
+	font-size: rem(44px);
 	color: $secondary;
 
 	&:after {
@@ -257,6 +261,11 @@
 	text-align: center;
     line-height: rem(25px);
     margin-bottom: rem(40px);
+	max-width: rem(800px);
+	margin-left: auto;
+	margin-right: auto;
+	font-weight: 300;
+	font-size: rem(15px);
 }
 
 .offer-box {
@@ -463,7 +472,7 @@
 }
 
 .home-promo-boxes {
-	padding: rem(52px) 0;
+	padding: rem(65px) 0 rem(52px);
 	background-color: $white;
 
 	@include media($M) {
@@ -487,7 +496,7 @@
 	}
 
 	h2 {
-		font-size: rem(34px);
+		font-size: rem(44px);
 
 		@include media($M) {
 			font-size: rem(20px);
@@ -686,7 +695,7 @@
 	
 	h2 {
 		color: $secondary;
-		font-size: rem(34px);
+		font-size: rem(44px);
 		&:after {
 			@include headingBorder;
 		}

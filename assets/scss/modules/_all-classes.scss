@@ -1,0 +1,58 @@
+.home-all-classes__heading {
+  margin-bottom: rem(38px);
+  h2 {
+    text-align: center;
+    color: $secondary;
+    font-size: rem(44px);
+    &:after {
+      @include headingBorder;
+    }
+  }
+}
+
+.home-all-classes {
+
+  color: $white;
+
+  .row > div:first-child {
+    background: $all-class-bg-1;
+  }
+
+  .row > div:nth-child(2) {
+    background: $all-class-bg-2;
+  }
+
+  .row > div:last-child {
+    background: $all-class-bg-3;
+  }
+
+  .classes__title h3 {
+    font-weight: 700;
+    font-size: rem(26px);
+    color: $white;
+    text-transform: uppercase;
+    margin: rem(50px) 0 rem(36px);
+  }
+
+  .classes__list {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    height: rem(332px);
+    ul {
+      padding: 0 rem(20px);
+      margin: 0;
+      list-style: none;
+
+      li {
+        font-size: rem(18px);
+        margin-bottom: rem(14px);
+      }
+    }
+  }
+
+}
+
+.all-classes-col {
+  text-align: center;
+}

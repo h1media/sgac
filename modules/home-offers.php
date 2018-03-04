@@ -17,7 +17,7 @@
 
         if ( $f_offer_h && $f_offer_t ) : ?>
             <div class="row">
-                <div class="col-lg-offset-2 col-lg-8">
+                <div class="col-xs-12">
                     <h2 class="offer-headline">
 		                <?php echo esc_html( $f_offer_h ); ?>
                     </h2>

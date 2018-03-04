@@ -22,15 +22,14 @@ get_header(); ?>
 						<p><?php echo wp_kses_post( $left_text ); ?></p>
 					<?php endif; ?>
 
-					<?php
-					$left_text_button = get_field( 'left_text_button' );
-					$left_button_link = get_field( 'left_button_link' );
-					if ( $left_text_button && $left_button_link ) : ?>
-						<a href="<?php echo esc_url( $left_button_link ); ?>" class="button">
-							<?php echo esc_html( $left_text_button ); ?>
-						</a>
+					<?php if ( have_rows( 'left_buttons' ) ) : ?>
+                        <?php while ( have_rows( 'left_buttons' ) ) : the_row(); ?>
+                            <a href="<?php the_sub_field( 'left_button_link' ); ?>" class="button">
+                                <?php the_sub_field( 'left_button_text' ); ?>
+                            </a>
+                        <?php endwhile; ?>
 					<?php endif; ?>
-				</div>
+                </div>
 			</div>
 			<div class="col-sm-6">
 				<div class="right-intro">
@@ -60,8 +59,7 @@ get_header(); ?>
 <div class="page-content">
 	<?php get_template_part( 'modules/home', 'offers' ); ?>
 	<?php get_template_part( 'modules/today', 'classes' ); ?>
-	<?php get_template_part( 'modules/home', 'about' ); ?>
-	<?php get_template_part( 'modules/home', 'invitation' ); ?>
+	<?php get_template_part( 'modules/all', 'classes' ); ?>
 	<?php get_template_part( 'modules/home', 'blog' ); ?>
 	<?php get_template_part( 'modules/home', 'instagram' ); ?>
 </div>

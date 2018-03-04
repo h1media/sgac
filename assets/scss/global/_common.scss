@@ -91,10 +91,20 @@ p {
 	}
 }
 
+.row--no-gutter {
+	div[class^="col"] {
+		padding: 0;
+	}
+}
+
 .container--narrow {
 	padding: 0 rem(64px);
 
 	@include media($M) {
 		padding: 0 rem(16px);
 	}
+}
+
+.container--wide {
+	width: 1440px;
 }

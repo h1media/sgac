@@ -94,7 +94,7 @@
 							$icon = '<span class="icon-ico-redfox"></span>';
 
 							printf(
-								wp_kses_post( __( 'Copyright &copy; %1$s %2$s. <a href="https://www.redfoxmedia.com.au" alt="Digital Agency Sydney" target="_blank">Digital Agency Sydney %3$s</a>', 'SGAC' ) ),
+								wp_kses_post( __( 'Copyright &copy; %1$s %2$s   <a href="https://www.redfoxmedia.com.au" alt="Digital Agency Sydney" target="_blank">Made with love by Redfox %3$s</a>', 'SGAC' ) ),
 								$year, $sitename, $icon
 							);
 							?>
