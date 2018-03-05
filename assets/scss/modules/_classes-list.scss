@@ -44,10 +44,28 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
+    min-height: rem(480px);
+  }
+
+  .class-no-img {
+    background-image: url('../img/bgs/no-img.png');
+    min-height: rem(480px);
   }
 
   .class-body {
     padding: rem(70px) rem(100px)!important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    @include media($XXL, $type:'min') {
+      max-width: 650px;
+    }
+
+    @include media($L) {
+      padding: rem(30px)!important;
+    }
 
     table {
       width: 100%;

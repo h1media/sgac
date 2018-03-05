@@ -59,6 +59,26 @@ $single_footer = get_field( 'class_footer_text', $term );
     }
     ?>
 
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                    <?php
+                    $taxonomy_name = get_queried_object()->taxonomy;
+                    $term_id = get_queried_object_id(); // Get the id of the taxonomy
+                    $termchildren = get_term_children( $term_id, $taxonomy_name ); // Get the children of said taxonomy
+                    // Display the children 
+                    echo '<tr>';
+                    foreach ( $termchildren as $child ) {
+                      $term = get_term_by( 'id', $child, $taxonomy_name );
+                      echo '<td><a href="' . get_term_link( $term->name, $taxonomy_name ) . '">' . $term->name . '</a></td>';
+                      echo '<td>' . $term->description . '</td>';
+                    }
+                    echo '</tr>';
+                    ?>
+            </div>
+        </div>
+    </div>
+
     <div class="container-fluid">
         <?php
         if ( have_posts() ) {
@@ -114,23 +134,5 @@ $single_footer = get_field( 'class_footer_text', $term );
             </div>
         </div>
     </div>
-
-<?php 
-$taxonomy = 'class-type'; //Choose the taxonomy
-$terms = get_terms( $taxonomy ); //Get all the terms
-
-foreach ($terms as $term) { //Cycle through terms, one at a time
-
-// Check and see if the term is a top-level parent. If so, display it.
-$parent = $term->parent;
- if ( $parent=='0' ) {
-
-    $term_id = $term->term_id; //Define the term ID
-    $term_link = get_term_link( $term, $taxonomy ); //Get the link to the archive page for that term
-    $term_name = $term->name;
-    echo '<a class="ccats" href="' . $term_link . '"><span class="label">' . $term_name . '</span></a>';    
-} }
-?>
-
 
 <?php get_footer();
