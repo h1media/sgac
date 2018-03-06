@@ -4,11 +4,8 @@
  *
  * @package one55
  */
-
-
-$blog_bg = get_field( 'blog_image' );
 ?>
-<div class="home-blog-section" <?php echo $blog_bg ? 'style="background-image:url(\'' . $blog_bg['url'] . '\')"' : ''; ?> >
+<div class="home-blog-section">
 	<div class="container">
 		<div class="row">
 			<?php
@@ -31,7 +28,7 @@ $blog_bg = get_field( 'blog_image' );
 								<h1 class="blog-item__title same-height"><?php the_title(); ?></h1>
 							</header>
 							<a href="<?php the_permalink(); ?>" class="button button--blog-item">
-								<?php esc_html_e( 'Read more', 'one55' ); ?>
+								<?php esc_html_e( 'Read more', 'SGAC' ); ?>
 							</a>
 							<?php
 							$a_cat = get_the_category( $post->ID );

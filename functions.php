@@ -44,6 +44,8 @@ function one55_setup() {
 
 	add_image_size( 'blog-list', 770, 184, true );
 
+	add_image_size( 'all-classes', 480, 306, true );
+
 	set_post_thumbnail_size( 311, 207, true );
 
 	// This theme uses wp_nav_menu() in two locations.

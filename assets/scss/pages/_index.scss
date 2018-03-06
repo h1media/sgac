@@ -660,7 +660,7 @@
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
-	padding: rem(70px) 0;
+	padding-top: rem(70px);
 
 	
 	@include media($M) {

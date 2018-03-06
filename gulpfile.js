@@ -1,5 +1,5 @@
 var config = {
-    devUrl: 'sgac.loc.com',
+    devUrl: 'localhost/sgac/',
     sass: 'assets/scss/**/*.{scss,sass}',
     sassFolder: 'assets/sass/',
     css: 'dist/css',

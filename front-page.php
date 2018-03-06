@@ -58,7 +58,6 @@ get_header(); ?>
 
 <div class="page-content">
 	<?php get_template_part( 'modules/home', 'offers' ); ?>
-	<?php get_template_part( 'modules/today', 'classes' ); ?>
 	<?php get_template_part( 'modules/all', 'classes' ); ?>
 	<?php get_template_part( 'modules/home', 'blog' ); ?>
 	<?php get_template_part( 'modules/home', 'instagram' ); ?>
