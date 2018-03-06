@@ -2,7 +2,7 @@
 /**
  * Refer a friend modal
  *
- * @package one55
+ * @package sgac
  */
 
 ?>

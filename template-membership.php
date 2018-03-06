@@ -2,7 +2,7 @@
 /**
  * Template Name: Membership
  *
- * @package one55
+ * @package sgac
  */
 
 get_header(); ?>

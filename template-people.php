@@ -2,7 +2,7 @@
 /**
  * Template Name: Our People
  *
- * @package one55
+ * @package sgac
  */
 
 $uri = get_template_directory_uri();

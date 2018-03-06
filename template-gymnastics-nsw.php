@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Sydney West Sport Medicine
+ * Template Name: Gymnastics NSW
  *
  * @package sgac
  */

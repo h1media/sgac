@@ -2,7 +2,7 @@
 /**
  * Blog Utility Bar
  *
- * @package one55
+ * @package sgac
  */
 
 ?>

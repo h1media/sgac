@@ -2,7 +2,7 @@
 /**
  * Join Banner (Sweat is our theraphy)
  *
- * @package one55
+ * @package sgac
  */
 $banner = [];
 $banner['image'] = get_field( 'join_banner_image', 'option' );

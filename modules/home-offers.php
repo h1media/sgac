@@ -2,7 +2,7 @@
 /**
  * Homepage offers boxes
  *
- * @package one55
+ * @package sgac
  */
 
 ?>

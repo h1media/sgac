@@ -2,7 +2,7 @@
 /**
  * Newsletter modal
  *
- * @package one55
+ * @package sgac
  */
 
 ?>

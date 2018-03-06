@@ -2,7 +2,7 @@
 /**
  * Homepage invitation
  *
- * @package one55
+ * @package sgac
  */
 
 

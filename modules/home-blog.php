@@ -2,7 +2,7 @@
 /**
  * Homepage blog
  *
- * @package one55
+ * @package sgac
  */
 ?>
 <div class="home-blog-section">

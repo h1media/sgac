@@ -2,7 +2,7 @@
 /**
  * Blog List Loop
  *
- * @package one55
+ * @package sgac
  */
 
 if ( have_posts() ) : ?>
