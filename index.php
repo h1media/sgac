@@ -2,7 +2,7 @@
 /**
  * The main template file
  *
- * @package one55
+ * @package sgac
  */
 
 $blog_page = get_option( 'page_for_posts' );

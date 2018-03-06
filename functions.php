@@ -2,7 +2,7 @@
 /**
  * Functions and definitions
  *
- * @package one55
+ * @package sgac
  */
 
 

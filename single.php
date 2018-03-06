@@ -2,7 +2,7 @@
 /**
  * Single Post Page
  *
- * @package one55
+ * @package sgac
  */
 
 get_header(); ?>

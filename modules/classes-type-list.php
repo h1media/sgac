@@ -2,7 +2,7 @@
 /**
  * Classes type list
  *
- * @package one55
+ * @package sgac
  */
 
 $uri = get_template_directory_uri();

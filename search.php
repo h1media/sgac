@@ -2,7 +2,7 @@
 /**
  * The main template file
  *
- * @package one55
+ * @package sgac
  */
 
 get_header(); ?>

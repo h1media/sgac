@@ -2,7 +2,7 @@
 /**
  * Class Description Events
  *
- * @package one55
+ * @package sgac
  */
 
 $locations = get_terms([

@@ -2,7 +2,7 @@
 /**
  * The template for displaying Comments.
  *
- * @package one55
+ * @package sgac
  */
 
 

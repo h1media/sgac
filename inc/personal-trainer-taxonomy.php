@@ -2,7 +2,7 @@
 /**
  * Personal Trainers Taxonomy
  *
- * @package one55
+ * @package sgac
  */
 
 if ( class_exists( 'WeeklyClass' ) ) {

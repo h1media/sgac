@@ -2,7 +2,7 @@
 /**
  * The template for displaying 404 pages (not found)
  *
- * @package one55
+ * @package sgac
  */
 
 get_header(); ?>

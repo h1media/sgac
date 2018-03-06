@@ -2,7 +2,7 @@
 /**
  * Personal Trainers Grid
  *
- * @package one55
+ * @package sgac
  */
 
 $trainers = get_terms([

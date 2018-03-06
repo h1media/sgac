@@ -2,7 +2,7 @@
 /**
  * Carousel Enlargement
  *
- * @package one55
+ * @package sgac
  */
 
 ?>
