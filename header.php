@@ -17,7 +17,7 @@
 if ( is_page() || is_single() ) {
 	$header_image = wp_get_attachment_url( get_post_thumbnail_id() );
 }
-if ( is_tax( 'wcs-type' ) ) {
+if ( is_tax( 'class-type' ) ) {
 	$term_id = get_queried_object()->term_id;
 	$get_term_image = get_field( 'image_feature', 'term_' . $term_id );
 	if ( ! empty( $get_term_image['url'] ) ) {
