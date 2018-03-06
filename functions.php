@@ -11,7 +11,7 @@
  *
  */
 require_once( 'inc/personal-trainer-taxonomy.php' );
-
+require_once( 'inc/classes-cpt-and-taxonomy.php' );
 
 /**
  * Sets up theme defaults and registers support for various WordPress features.
