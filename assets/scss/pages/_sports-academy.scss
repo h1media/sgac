@@ -1,0 +1,162 @@
+.text-over-image {
+	padding: rem(100px) 0px;
+	background-size: cover;
+	background-position: center;
+	background-color: $text-content;
+
+	.over-text {
+		padding: rem(71px) rem(62px);
+		background-color: rgba($white, 0.86);
+		margin-left: 33%;
+		box-sizing: border-box;
+
+		@include media($M) {
+			margin-left: 0px;
+		}
+
+		@include media($S) {
+			padding: rem(50px);
+		}
+
+		@include media($XS) {
+			padding: rem(25px);
+		}
+	}
+
+	h2 {
+
+		&.title {
+			color: $secondary;
+			font-family: $secondary-font;
+			font-size: rem(30px);
+			font-weight: 500;
+			line-height: rem(49px);
+			position: relative;
+			margin: 0 0 rem(40px) 0;
+
+			&:after {
+				content: '';
+				display: block;
+				width: 50px;
+				height: 3px;
+				background-color: $primary;
+				position: absolute;
+				bottom: -10px;
+				left: 0px;
+			}	
+		}
+	}
+
+	h3 {
+		color: $text-blue;	
+		font-size: rem(18px);
+		font-weight: 500;
+		line-height: rem(24px);
+		margin: 0 0 rem(5px) 0;
+	}
+
+	h4 {
+		color: $text-blue;
+		font-size: rem(16px);
+		font-weight: 500;
+		line-height: rem(22px);
+		margin: 0px;
+	}
+
+	table {
+
+		td {
+			vertical-align: top;
+			padding-right: 10px;
+			box-sizing: border-box;
+
+			@include media($XS) {
+				display: block;
+				width: 100%;
+				padding-right: 0px;
+			}
+		}
+	}
+}
+
+.sa-forms {
+
+	.tabs-secondary {
+		background-color: $primary;
+		text-align: center;
+		width: 100%;
+		height: 60px;
+
+		@include media($L) {
+			height: auto;
+			padding: 20px 0;
+		}
+
+		ul {
+			text-align: center;
+		}
+
+		li {
+			display: inline-block;
+		}
+
+		.tab__item {
+			background-color: $primary;
+			color: $white;
+			border: 0px;
+			padding: rem(22px) rem(27px) rem(16px) rem(27px);
+			font-size: rem(16px);
+
+			@include media($L) {
+				display: block;
+				float: none;
+				text-align: center;
+				border-radius: 15px;
+				padding: rem(12px) rem(27px) rem(8px) rem(27px);
+			}
+
+			&.active {
+				background-color: $white;
+				color: $primary;
+			}
+		}
+	}
+
+	.form-tab {
+		
+		.title-container {
+			text-align: center;
+			margin: rem(90px) 0 0 0;
+		}
+
+		h3 {
+			color: $secondary;
+			font-family: $secondary-font;
+			font-size: rem(30px);
+			font-weight: 500;
+			line-height: rem(49px);
+			position: relative;
+			margin: 0 0 rem(50px) 0;
+			display: inline-block;
+
+			&:after {
+				content: '';
+				display: block;
+				width: 50px;
+				height: 3px;
+				background-color: $primary;
+				position: absolute;
+				bottom: -10px;
+				left: 50%;
+				margin-left: -25px;
+			}	
+		}
+	}
+
+	.form {
+		background-color: $sidebar;
+		padding: rem(54px) rem(67px);
+		box-sizing: border-box;
+		margin-bottom: rem(76px);
+	}
+}
