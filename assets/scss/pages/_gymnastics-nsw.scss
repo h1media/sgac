@@ -1,0 +1,25 @@
+.gn-contact {
+	background-color: $primary;
+	padding: rem(18px) rem(50px);
+
+	p {
+		text-align: center;
+		color: $white;
+		margin: 0px;
+		font-size: rem(18px);
+		font-weight: 500;
+		line-height: rem(24px);
+	}
+
+	a {
+		color: $white;
+		border-bottom: 2px solid $primary;
+		transition: 0.3s;
+
+		&:hover {
+			color: $white;
+			border-color: $white;
+			text-decoration: none;
+		}
+	}
+}
