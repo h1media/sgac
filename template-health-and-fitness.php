@@ -55,7 +55,7 @@ while ( have_posts() ) :
 										<?php echo wp_kses_post( $offer['content'] ); ?>
 									<?php } ?>
 									<?php if ( ! empty( $offer['button_text'] ) ) { ?>
-										<a href="<?php echo esc_url( $offer['button_link'] ); ?>" class="offer-button">
+										<a href="<?php echo esc_url( $offer['button_link'] ); ?>" class="button-with-bg">
 											<?php echo esc_html( $offer['button_text'] ); ?>
 										</a>
 									<?php } ?>
