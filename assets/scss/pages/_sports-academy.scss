@@ -37,6 +37,29 @@
 		}
 	}
 
+	.row-gn-1 {
+
+		.over-text {
+			margin-left: 0px;
+			margin-right: 33%;
+
+			@include media($M) {
+				margin-right: 0px;
+			}
+		}
+
+		h2 {
+
+			&.title {
+				padding-right: 150px;
+
+				@include media($L) {
+					padding-right: 0px;
+				}
+			}
+		}
+	}
+
 	h2 {
 
 		&.title {

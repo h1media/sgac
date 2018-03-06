@@ -13,6 +13,12 @@ get_header(); ?>
 		<div class="row">
 			<div class="col-sm-12 col-md-10 col-md-offset-1">
 				<h1><?php the_field( 'title' ); ?></h1>
+				<?php
+					$g_n_logo = get_field( 'g_n_logo' );
+				if ( ! empty( $g_n_logo ) ) {
+				?>
+				<img src="<?php echo esc_url( $g_n_logo ); ?>" alt="<?php the_field( 'title' ); ?>">
+				<?php } ?>
 				<?php the_field( 'text' ); ?>
 			</div>
 		</div>
@@ -23,17 +29,16 @@ while ( have_posts() ) :
 	the_post();
 ?>
 	<?php
-	$swsm_content = get_field( 'swsm_content' );
-	$swsm_background_image = get_field( 'swsm_background_image' );
-	if ( ! empty( $swsm_content ) ) {
+	$g_n_content = get_field( 'g_n_content' );
+	if ( ! empty( $g_n_content ) ) {
 	?>
-	<div class="text-over-image"
-		<?php if ( ! empty( $swsm_background_image ) ) { ?>
-			style="background-image: url('<?php echo esc_url( $swsm_background_image ); ?>');"
-		<?php } ?>>
-		<div class="container">
-			<?php foreach ( $swsm_content as $key => $content ) { ?>	
-				<div class="row row-<?php echo $key; ?>">
+	<?php foreach ( $g_n_content as $key => $content ) { ?>	
+		<div class="text-over-image"
+			<?php if ( ! empty( $content['background_image'] ) ) { ?>
+				style="background-image: url('<?php echo esc_url( $content['background_image'] ); ?>');"
+			<?php } ?>>
+			<div class="container">	
+				<div class="row row-gn-<?php echo $key; ?>">
 					<div class="col-sm-12">
 						<div class="over-text">
 							<?php if ( ! empty( $content['title'] ) ) { ?>
@@ -47,10 +52,18 @@ while ( have_posts() ) :
 						</div>
 					</div>
 				</div>
-		<?php } ?>
+			</div>
 		</div>
-	</div>
 	<?php } ?>
+<?php } ?>
+<?php
+	$g_n_contact = get_field( 'g_n_contact' );
+if ( ! empty( $g_n_contact ) ) {
+	?>
+	<div class="gn-contact">
+	<?php echo wp_kses_post( $g_n_contact ); ?>
+	</div>
+<?php } ?>
 <?php endwhile; ?>
 <?php
 get_footer();
