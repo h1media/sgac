@@ -200,19 +200,20 @@
 	font-weight: bold;
 	line-height: rem(13px);
 	text-transform: uppercase;
-	padding: 0 rem(16px);
-	height: 23px;
-	line-height: 23px;
+	padding: rem(5px) rem(16px);
+	line-height: 13px;
 	border-radius: 12px;
 	display: inline-block;
 	transition: 0.3s;
 	box-sizing: border-box;
 	margin-right: 14px;
 	margin-bottom: 10px;
+	text-align: center;
 
 	&:hover {
 		text-decoration: none;
 		border-bottom: 0px;
 		background-color: darken($primary, 10%);
+		color: $white;
 	}
 }
