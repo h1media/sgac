@@ -143,28 +143,6 @@
 				line-height: rem(22px);
 				margin-bottom: rem(30px);
 			}
-
-			.offer-button {
-				background-color: $primary;
-				color: $white;
-				font-size: rem(10px);
-				font-weight: bold;
-				line-height: rem(13px);
-				text-transform: uppercase;
-				padding: 0 rem(16px);
-				height: 23px;
-				line-height: 23px;
-				border-radius: 12px;
-				display: inline-block;
-				transition: 0.3s;
-				box-sizing: border-box;
-
-				&:hover {
-					text-decoration: none;
-					border-bottom: 0px;
-					background-color: darken($primary, 10%);
-				}
-			}
 		}
 	}
 }
@@ -212,5 +190,29 @@
 				border-color: $white;
 			}
 		}
+	}
+}
+
+.button-with-bg {
+	background-color: $primary;
+	color: $white;
+	font-size: rem(10px);
+	font-weight: bold;
+	line-height: rem(13px);
+	text-transform: uppercase;
+	padding: 0 rem(16px);
+	height: 23px;
+	line-height: 23px;
+	border-radius: 12px;
+	display: inline-block;
+	transition: 0.3s;
+	box-sizing: border-box;
+	margin-right: 14px;
+	margin-bottom: 10px;
+
+	&:hover {
+		text-decoration: none;
+		border-bottom: 0px;
+		background-color: darken($primary, 10%);
 	}
 }
